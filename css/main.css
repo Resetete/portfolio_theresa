@@ -1,0 +1,58 @@
+/***** BASE STYLES *****/
+body{
+  background-color: #FFFFFF;
+  font-family: 'Anton', sans-serif;
+}
+
+
+
+/***** GRID *****/
+
+.full-width {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.half-width {
+  float: left;
+  width: 50%;
+}
+
+.third-width {
+  float: left;
+  width: 33%;
+}
+
+.two-third-width {
+  float: left;
+  width: 66%;
+}
+
+.button {
+    background-color: #9D3A3B;
+    color: #FFFFFF;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    padding: 5px 20px 5px 20px;
+    text-transform: uppercase;
+}
+
+/***** HEADER *****/
+
+
+/***** WELCOME *****/
+
+
+
+/***** BIOGRAPHY *****/
+
+/***** CONNECT *****/
+
+
+
+/***** FOOTER *****/
+
+#copyright {
+  font-style: italic;
+  padding-top: 20px;
+}
