@@ -37,8 +37,17 @@ body{
     text-transform: uppercase;
 }
 
-
-
+/* Section introduction letters */
+.section_headers {
+  mix-blend-mode: overlay; /* to blend the text into the background */
+  font-size: 150px;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+  margin:0px;
+  border: 0px;
+  text-transform: uppercase;
+}
 
 /***** HEADER *****/
 
@@ -117,7 +126,14 @@ header #logo {
 }
 
 
-
+/***** WORK *****/
+#work {
+  background: url('../img/work_water_from_space_background.png') center center ;
+  height: 500px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
 
 /***** BIOGRAPHY *****/
 
