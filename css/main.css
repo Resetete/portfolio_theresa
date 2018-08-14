@@ -20,6 +20,7 @@ body{
 
 .third-width {
   float: left;
+  text-align: center;
   width: 33%;
 }
 
@@ -47,6 +48,21 @@ body{
   margin:0px;
   border: 0px;
   text-transform: uppercase;
+}
+
+/* centering of images within divs */
+.centering {
+  display: block;
+  margin-right: auto; /* to center the images horizontally and vertically within the div*/
+  margin-left: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+
+/* making text bold */
+.text-strong-highlight {
+  font-weight:  bold;
 }
 
 /***** HEADER *****/
@@ -144,33 +160,36 @@ header #logo {
 
 #work_projects img {
   mix-blend-mode: overlay;
-  padding-left: 10%;
 }
 
 #work_projects p {
   color: white;
   text-shadow: 1px 1px black; /* to have a black shadow */
-  font-size: 2.5vw; /* allows responsive text size */
+  font-size: 2vw; /* allows responsive text size */
   display: inline;
   position: absolute;
   text-align: left;
-  line-height: 150%;
+  line-height: 110%;
   padding-left: 2%;
   padding-top: 13%;
 }
 
-.centering {
-  display: block;
-  margin-right: auto; /* to center the images horizontally and vertically within the div*/
-  margin-left: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
+/* leveling the project icons */
+#project_yvonne_translations {
+  padding: 15%;
 }
 
-.text-strong-highlight {
-  font-weight:  bold;
+#project_ntp {
+  padding: 12%;
 }
+
+#project_trigo_santana {
+  padding: 12%;
+}
+
+
+
+
 
 /***** BIOGRAPHY *****/
 
