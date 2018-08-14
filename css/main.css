@@ -40,10 +40,10 @@ body{
 /* Section introduction letters */
 .section_headers {
   mix-blend-mode: overlay; /* to blend the text into the background */
-  font-size: 150px;
+  font-size: 12vw; /* scaling font (responsive) */
   color: white;
   text-align: center;
-  padding-top: 150px;
+  padding: 50px 0 50px 0;
   margin:0px;
   border: 0px;
   text-transform: uppercase;
@@ -56,7 +56,8 @@ header {
   border: 0px;
   margin: 0px;
   padding: 0px;
-  background: url('../img/background_foto_forest.png') no-repeat center center fixed;
+  background: url('../img/background_foto_forest.png') center center;
+  border-bottom: 3px solid #24382B ;
   position: sticky;
   background-size: cover;
 }
@@ -74,7 +75,7 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.9vw; /* responsive text size */
   padding-left: 20px;
   text-transform: uppercase;
   font-weight: 400;
@@ -88,31 +89,30 @@ header #logo {
 
 #startpage {
   background: url('../img/background_foto_forest.png') no-repeat center center fixed;
-  min-height: 1000px;
+  min-height: 800px;
   height: auto;
 }
 
-
-
 #slogan {
   color: white;
-  font-size: 40px;
+  font-size: 5vw; /* responsive font size */
   padding: 150px 0px 0px 100px;
 }
 
 #highlight_slogen1 {
   color: #C490D1;
-  font-size: 60px;
+  font-size: 6.5vw; /* responsive font size */
 }
 
 #highlight_slogen2 {
   color: #2D81AF;
-  font-size: 110px;
+  font-size: 8vw; /* responsive font size */
   padding-left: 40px;
 }
 
 #action_slogan {
   padding-top: 250px;
+  font-size: 2vw;
 }
 
 #startpage h2 {
@@ -123,16 +123,52 @@ header #logo {
   /* needed to have the transparent part of the png showing off  */
   background-color: transparent;
   border: 0px;
+  min-width: 100%;
 }
 
 
 /***** WORK *****/
 #work {
-  background: url('../img/work_water_from_space_background.png') center center ;
-  height: 500px;
+  background: url('../img/work_water_from_space_background.png') center top fixed;
   border: 0px;
   margin: 0px;
   padding: 0px;
+}
+
+#work_projects {
+  background: #2D81AF;
+  height: 500px;
+  margin: auto; /* to center the images horizontally and vertically within the div*/
+
+}
+
+#work_projects img {
+  mix-blend-mode: overlay;
+  padding-left: 10%;
+}
+
+#work_projects p {
+  color: white;
+  text-shadow: 1px 1px black; /* to have a black shadow */
+  font-size: 2.5vw; /* allows responsive text size */
+  display: inline;
+  position: absolute;
+  text-align: left;
+  line-height: 150%;
+  padding-left: 2%;
+  padding-top: 4%;
+}
+
+.centering {
+  display: block;
+  margin-right: auto; /* to center the images horizontally and vertically within the div*/
+  margin-left: auto;
+  padding-top: 100px;
+  float: left;
+}
+
+.text-strong-highlight {
+  font-weight:  bold;
 }
 
 /***** BIOGRAPHY *****/
