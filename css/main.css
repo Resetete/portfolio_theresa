@@ -143,6 +143,16 @@ header #logo {
 }
 
 
+#chamaeleon {
+  padding-left: 35%;
+  mix-blend-mode: normal;
+  position: absolute;
+}
+
+#chamaeleon:hover {
+  mix-blend-mode: difference  ; /* DIFFERENCE hard-light overlay*/ 
+}
+
 /***** WORK *****/
 #work {
   background: url('../img/work_water_from_space_background.png') center top fixed;
