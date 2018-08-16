@@ -233,15 +233,29 @@ header #logo {
   color: white;
 }
 
+#services-content p {
+  padding: 0;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+#services-content h2 {
+  padding: 0;
+  border: 0;
+  margin-bottom: 0px;
+}
+
 #services-content img {
   width: 100px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border: 0px;
 }
 
 
 #services-first-line {
   float:left;
 }
-
 
 
 /***** CONNECT *****/
