@@ -41,10 +41,10 @@ body{
 /* Section introduction letters */
 .section_headers {
   mix-blend-mode: overlay; /* to blend the text into the background */
-  font-size: 12vw; /* scaling font (responsive) */
+  font-size: 15vw; /* scaling font (responsive) */
   color: white;
   text-align: center;
-  padding: 50px 0 50px 0;
+  padding: 150px 0px 150px 0px;
   margin:0px;
   border: 0px;
   text-transform: uppercase;
@@ -63,6 +63,13 @@ body{
 /* making text bold */
 .text-strong-highlight {
   font-weight:  bold;
+}
+
+.section_contents {
+  height: 500px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /***** HEADER *****/
@@ -150,20 +157,16 @@ header #logo {
 }
 
 #chamaeleon:hover {
-  mix-blend-mode: difference  ; /* DIFFERENCE hard-light overlay*/ 
+  mix-blend-mode: difference  ; /* DIFFERENCE hard-light overlay*/
 }
 
 /***** WORK *****/
 #work {
   background: url('../img/work_water_from_space_background.png') center top fixed;
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
 }
 
 #work_projects {
   background: #2D81AF;
-  height: 500px;
   margin: auto; /* to center the images horizontally and vertically within the div*/
 
 }
@@ -198,10 +201,48 @@ header #logo {
 }
 
 
+/***** ABOUT *****/
+#about {
+  background: url('../img/background_about_water_from_space.png') center center fixed;
+}
+
+#about_text {
+  background: #C490D1;
+  height: 500px;
+  margin: auto; /* to center the images horizontally and vertically within the div*/
+  padding: 10% 15% 10% 15%;
+  display: block;
+}
+
+#about_text p {
+  color: white;
+  line-height: 25px;
+}
 
 
+/***** SERVICES *****/
+#services {
+  background: url('../img/background_services_water_from_space.png') center top fixed;
+}
 
-/***** BIOGRAPHY *****/
+#services-content {
+  background: #2D81AF;
+  text-align: center;
+  padding: 10% 0 10% 0;
+  height: 600px;
+  color: white;
+}
+
+#services-content img {
+  width: 100px;
+}
+
+
+#services-first-line {
+  float:left;
+}
+
+
 
 /***** CONNECT *****/
 
