@@ -20,7 +20,6 @@ body{
 
 .third-width {
   float: left;
-  text-align: center;
   width: 33%;
 }
 
@@ -106,8 +105,12 @@ nav ul li a {
 }
 
 header #logo {
-  padding: 20px 0px 0px 20px;
+  padding: 20px 0 0 10%;
+  margin: 0px;
+  border: 0px;
 }
+
+
 /***** STARTPAGE *****/
 
 #startpage {
@@ -151,7 +154,7 @@ header #logo {
 
 
 #chamaeleon {
-  padding-left: 35%;
+  padding-left: 40%;
   mix-blend-mode: normal;
   position: absolute;
 }
