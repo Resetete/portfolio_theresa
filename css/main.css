@@ -44,7 +44,7 @@ body{
   color: white;
   text-align: center;
   padding: 150px 0px 150px 0px;
-  margin:0px;
+  margin: 0px;
   border: 0px;
   text-transform: uppercase;
 }
@@ -66,8 +66,8 @@ body{
 
 .section_contents {
   height: 400px;
-  border: 0px;
-  margin: 0px;
+  border: 0;
+  margin: 0;
   padding: 0px;
 }
 
@@ -170,9 +170,10 @@ header #logo {
 
 #work_projects {
   background: #2D81AF;
-  margin: auto; /* to center the images horizontally and vertically within the div*/
-  padding: auto;
+  margin: 0px; /* to center the images horizontally and vertically within the div*/
+  padding: 0% 10% 0% 10%;
   text-align: center;
+  border: 0px;
 }
 
 #work_projects img {
@@ -241,16 +242,18 @@ header #logo {
   padding: 0;
   border: 0;
   margin-bottom: 15px;
+  font-size: 2vw;
 }
 
 #services-content h2 {
   padding: 0;
   border: 0;
   margin-bottom: 0px;
+  font-size: 3vw;
 }
 
 #services-content img {
-  width: 80px;
+  width: 70px;
   margin-bottom: 0px;
   padding-bottom: 0px;
   border: 0px;
@@ -264,11 +267,26 @@ header #logo {
 
 /***** CONTACT *****/
 
+#contact {
+  background: url('../img/background_contact.png') center center fixed;
+}
+
+#contact-content {
+  background: #C490D1;
+  text-align: center;
+  color: white;
+  padding: 100px;
+  font-size: 2vw;
+}
+
 
 
 /***** FOOTER *****/
 
 #copyright {
   font-style: italic;
+  text-align: center;
   padding-top: 20px;
+  height: 400px;
+  background: url('../img/background_lastpic.png') center center fixed;
 }
