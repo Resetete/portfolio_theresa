@@ -1,7 +1,7 @@
 /***** BASE STYLES *****/
 body{
   background-color: #FFFFFF;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -31,11 +31,12 @@ body{
 .button {
     background-color: #FCF9F9;
     color: black;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     padding: 5px 20px 5px 20px;
     text-transform: uppercase;
 }
+
 
 /* Section introduction letters */
 .section_headers {
@@ -164,45 +165,59 @@ header #logo {
 /***** WORK *****/
 #work {
   background: url('../img/work_water_from_space_background.png') center top fixed;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 #work_projects {
   background: #2D81AF;
-  /* margin: 0px; /* to center the images horizontally and vertically within the div*/
-  padding: 0% 10% 0% 10%;
-  text-align: center;
+  padding: 5% 10% 5% 10%; /* to assure that there are no spaces between other page sections*/
+}
+
+#work_project_item {
   border: 0px;
+  margin: auto;
+  padding: auto;
+  overflow: hidden;
+  max-width: 900px;
+  list-style: none;
 }
 
-#work_projects img {
+#work_projects li {
+  display: inline-block;
+  width: 30%; /* set the width of the project logo elements*/
+  vertical-align: middle;
+  padding-right: 10px; /* distance between project logo items */
+  margin: 0px;
+  text-align: center; /* to center the project logos and desctiptions */
+
+}
+
+.work_projects_cell {
+  display: block;
+  overflow: hidden;
+}
+
+.work_projects_cell img {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+/* formatting work project logo */
+.work-project-logo {
   mix-blend-mode: overlay;
-  width: 40%;
 }
 
-#work_projects p {
+/* formatting caption */
+.work-project-description {
   color: white;
   text-shadow: 1px 1px black; /* to have a black shadow */
   font-size: 2vw; /* allows responsive text size */
-  display: inline;
-  position: absolute;
-  text-align: left;
   line-height: 110%;
-  padding-left: 10px;
-  padding-top: 50px;
 }
 
-/* leveling the project icons */
-#project_yvonne_translations {
-  padding: 10px;
-}
-
-#project_ntp {
-  padding: 10px;
-}
-
-#project_trigo_santana {
-  padding: 10px;
-}
 
 
 /***** ABOUT *****/
@@ -221,7 +236,7 @@ header #logo {
 #about_text p {
   color: white;
   line-height: 25px;
-}
+  font-weight:  lighter;
 
 
 /***** SERVICES *****/
