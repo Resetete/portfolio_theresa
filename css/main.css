@@ -51,12 +51,10 @@ body{
 
 /* centering of images within divs */
 .centering {
-  display: block;
   margin-right: auto; /* to center the images horizontally and vertically within the div*/
   margin-left: auto;
   padding-top: 100px;
   padding-bottom: 100px;
-
 }
 
 /* making text bold */
@@ -66,8 +64,8 @@ body{
 
 .section_contents {
   height: 400px;
-  border: 0;
-  margin: 0;
+  border: 0px;
+  margin: 0px;
   padding: 0px;
 }
 
@@ -170,7 +168,7 @@ header #logo {
 
 #work_projects {
   background: #2D81AF;
-  margin: 0px; /* to center the images horizontally and vertically within the div*/
+  /* margin: 0px; /* to center the images horizontally and vertically within the div*/
   padding: 0% 10% 0% 10%;
   text-align: center;
   border: 0px;
@@ -178,6 +176,7 @@ header #logo {
 
 #work_projects img {
   mix-blend-mode: overlay;
+  width: 40%;
 }
 
 #work_projects p {
@@ -188,21 +187,21 @@ header #logo {
   position: absolute;
   text-align: left;
   line-height: 110%;
-  padding-left: 2%;
-  padding-top: 13%;
+  padding-left: 10px;
+  padding-top: 50px;
 }
 
 /* leveling the project icons */
 #project_yvonne_translations {
-  padding: 15%;
+  padding: 10px;
 }
 
 #project_ntp {
-  padding: 12%;
+  padding: 10px;
 }
 
 #project_trigo_santana {
-  padding: 12%;
+  padding: 10px;
 }
 
 
@@ -289,4 +288,6 @@ header #logo {
   padding-top: 20px;
   height: 400px;
   background: url('../img/background_lastpic.png') center center fixed;
+  color: white;
+  font-size: 17px;
 }
