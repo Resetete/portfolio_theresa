@@ -7,7 +7,7 @@ body{
 
 p {
   color: white;
-  line-height: 1.2;
+  line-height: 1.5;
   font-weight: lighter;
   font-size: calc(20px + 0.5vw); /* responive font size */
 }
