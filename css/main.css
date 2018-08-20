@@ -336,17 +336,24 @@ footer p {
 }
 
 #social_media_links {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+#social_media_links ul {
+  margin: 0px;
+  padding: 0px;
   border: 0px;
 }
 
 #social_media_links ul li {
   list-style: none;
-  display: inline
+  display: inline;
 }
 
 /* formatting social media link styles */
 #social_media_links ul li a {
   text-decoration: none; /* so that text/links doesn't have an underline */
+
 }
