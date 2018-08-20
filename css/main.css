@@ -2,6 +2,7 @@
 body{
   background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Roboto Slab', sans-serif; */
 }
 
 
@@ -48,6 +49,7 @@ body{
   margin: 0px;
   border: 0px;
   text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 /* centering of images within divs */
@@ -121,7 +123,10 @@ header #logo {
 #slogan {
   color: white;
   font-size: 5vw; /* responsive font size */
-  padding: 150px 0px 0px 100px;
+  padding: 60px 0px 0px 100px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: black 900 ;
+
 }
 
 #highlight_slogen1 {
@@ -186,12 +191,11 @@ header #logo {
 
 #work_projects li {
   display: inline-block;
-  width: 30%; /* set the width of the project logo elements*/
-  vertical-align: middle;
+  width: 30%;  set the width of the project logo elements*/
+  vertical-align: top;
   padding-right: 10px; /* distance between project logo items */
   margin: 0px;
   text-align: center; /* to center the project logos and desctiptions */
-
 }
 
 .work_projects_cell {
@@ -200,15 +204,20 @@ header #logo {
 }
 
 .work_projects_cell img {
-  width: 100%;
-  height: auto;
   border: none;
 }
 
 /* formatting work project logo */
 .work-project-logo {
   mix-blend-mode: overlay;
+  vertical-align: top;
 }
+
+.work-project-logo:hover {
+  mix-blend-mode:  normal;
+}
+
+
 
 /* formatting caption */
 .work-project-description {
@@ -216,7 +225,9 @@ header #logo {
   text-shadow: 1px 1px black; /* to have a black shadow */
   font-size: 2vw; /* allows responsive text size */
   line-height: 110%;
+  padding-top: 10px;
 }
+
 
 
 
@@ -237,7 +248,7 @@ header #logo {
   color: white;
   line-height: 25px;
   font-weight:  lighter;
-
+}
 
 /***** SERVICES *****/
 #services {
@@ -247,36 +258,33 @@ header #logo {
 #services-content {
   background: #2D81AF;
   text-align: center;
-  padding: 10% 0 10% 0;
-  height: 600px;
+  padding: 100px 0 100px 0;
+  height: 550px;
   color: white;
 }
 
 #services-content p {
-  padding: 0;
-  border: 0;
-  margin-bottom: 15px;
-  font-size: 2vw;
+  padding: 0px;
+  border: 0px;
+  margin-bottom: 0px;
+  font-size: 1.5vw;
 }
 
 #services-content h2 {
-  padding: 0;
-  border: 0;
+  padding: 0px;
+  border: 0px;
   margin-bottom: 0px;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 #services-content img {
   width: 70px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin: 0px;
+  padding: 0px;
   border: 0px;
 }
 
 
-#services-first-line {
-  float:left;
-}
 
 
 /***** CONTACT *****/
