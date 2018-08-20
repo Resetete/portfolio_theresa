@@ -193,11 +193,12 @@ header #logo {
 
 #work_projects li {
   display: inline-block;
-  width: 30%;  set the width of the project logo elements*/
-  vertical-align: top;
+  width: 30%;  /*set the width of the project logo elements*/
+  vertical-align: top; /* to put the logos on the top of the div element */
   padding-right: 10px; /* distance between project logo items */
   margin: 0px;
   text-align: center; /* to center the project logos and desctiptions */
+  /*border: 1px solid red; */ /* to check the sizes and distribution of the logos*/
 }
 
 .work_projects_cell {
@@ -212,7 +213,6 @@ header #logo {
 /* formatting work project logo */
 .work-project-logo {
   mix-blend-mode: overlay;
-  vertical-align: top;
 }
 
 .work-project-logo:hover {
@@ -235,8 +235,9 @@ header #logo {
 
 /***** ABOUT *****/
 #about {
-  background: url('../img/background_about_water_from_space.png') center center fixed;
+  background: url('../img/background_services_water_from_space.png') center center fixed;
 }
+
 
 #about_text {
   background: #C490D1;
@@ -256,7 +257,7 @@ header #logo {
 
 /***** SERVICES *****/
 #services {
-  background: url('../img/background_services_water_from_space.png') center top fixed;
+  background: url('../img/background_contact.png') center top fixed;
 }
 
 #services-content {
@@ -302,11 +303,11 @@ header #logo {
 /***** CONTACT *****/
 
 #contact {
-  background: url('../img/background_contact.png') center center fixed;
+  background: url('../img/background_about_water_from_space.png') center center fixed;
 }
 
 #contact-content {
-  background: #C490D1;
+  background: #189A83;
   text-align: center;
   color: white;
   padding: 100px;
@@ -318,11 +319,14 @@ header #logo {
 /***** FOOTER *****/
 
 #copyright {
-  font-style: italic;
   text-align: center;
   padding-top: 20px;
-  height: 400px;
+  height: 300px;
   background: url('../img/background_lastpic.png') center center fixed;
   color: white;
-  font-size: 17px;
+}
+
+footer p {
+    font-size: 1vw;
+    padding-top: 80px;
 }
