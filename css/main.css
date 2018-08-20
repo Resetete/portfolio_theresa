@@ -243,6 +243,7 @@ header #logo {
   margin: auto; /* to center the images horizontally and vertically within the div*/
   padding: 10% 15% 10% 15%;
   display: block;
+  text-align: justify; /* makes a blocksatz */
 }
 
 #about_text p {
