@@ -7,7 +7,7 @@ body{
 
 p {
   color: white;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: lighter;
   font-size: calc(20px + 0.5vw); /* responive font size */
 }
@@ -225,7 +225,6 @@ header #logo {
   color: white;
   text-shadow: 1px 1px black; /* to have a black shadow */
   font-size: calc(20px + 0.5vw); /* allows responsive text size */
-  line-height: 25px;
   padding-top: 10px;
 }
 
