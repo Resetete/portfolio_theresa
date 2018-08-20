@@ -81,7 +81,8 @@ header {
   padding: 0px;
   background: url('../img/background_foto_forest.png') center center;
   border-bottom: 3px solid #24382B ;
-  position: sticky;
+  position: fixed; /* so that the nav bar is always visible */
+  width: 100%; /* to make the nav bar wisth the whole screen */
   background-size: cover;
 }
 
