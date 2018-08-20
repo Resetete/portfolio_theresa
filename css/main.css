@@ -6,16 +6,20 @@ body{
 }
 
 p {
-  font-size: 20px;
-}
-
-h1 {
-  font-size: 70px;
+  color: white;
+  line-height: 25px;
+  font-weight: lighter;
+  font-size: calc(20px + 0.5vw); /* responive font size */
 }
 
 h2 {
-  font-size: 30px;
+  padding: 0px;
+  border: 0px;
+  margin-bottom: 0px;
+  font-size: calc(25px + 0.5vw); /* responsize font size */
+  color: white;
 }
+
 /***** GRID *****/
 
 .full-width {
@@ -99,8 +103,8 @@ nav ul li {
 
 nav ul li a {
   color: white;
-  text-decoration: none;
-  font-size: 1.3vw; /* responsive text size */
+  text-decoration: none; /* so that text/links doesn't have an underline */
+  font-size: calc(10px + 0.5vw); /* responsive text size with min font size 15x */
   padding-left: 20px;
   text-transform: uppercase;
   font-weight: 400;
@@ -125,7 +129,7 @@ header #logo {
 #slogan {
   color: white;
   font-size: 5vw; /* responsive font size */
-  padding: 60px 0px 0px 100px;
+  padding: 90px 0px 0px 100px;
   font-family: 'Titillium Web', sans-serif;
   font-weight: black 900 ;
 
@@ -145,11 +149,9 @@ header #logo {
 #action_slogan {
   padding-top: 250px;
   font-size: 2vw;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-#startpage h2 {
-  color: white;
-}
 
 #startpage_button {
   /* needed to have the transparent part of the png showing off  */
@@ -161,6 +163,7 @@ header #logo {
 
 #chamaeleon {
   padding-left: 40%;
+  padding-top: 140px;
   mix-blend-mode: normal;
   position: absolute;
 }
@@ -171,10 +174,7 @@ header #logo {
 
 /***** WORK *****/
 #work {
-  background: url('../img/work_water_from_space_background.png') center top fixed;
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
+  background: url('../img/work_water_from_space_background.png') no-repeat center top fixed;
 }
 
 #work_projects {
@@ -220,13 +220,12 @@ header #logo {
 }
 
 
-
 /* formatting caption */
 .work-project-description {
   color: white;
   text-shadow: 1px 1px black; /* to have a black shadow */
-  font-size: 2vw; /* allows responsive text size */
-  line-height: 110%;
+  font-size: calc(20px + 0.5vw); /* allows responsive text size */
+  line-height: 25px;
   padding-top: 10px;
 }
 
@@ -248,12 +247,12 @@ header #logo {
   text-align: justify; /* makes a blocksatz */
 }
 
-#about_text p {
+/* #about_text p {
   color: white;
   line-height: 25px;
   font-weight: lighter;
-  font-size: 20px;
-}
+  font-size: calc(20px + 0.5vw); } /* responive font size */
+
 
 /***** SERVICES *****/
 #services {
@@ -264,23 +263,23 @@ header #logo {
   background: #2D81AF;
   text-align: center;
   padding: 100px 0 100px 0;
-  height: 550px;
   color: white;
+  height: 550px;
 }
 
-#services-content p {
+.services-third-line {
+  padding-bottom: 100px;
+  height: 100px;
+}
+
+/* #services-content p {
   padding: 0px;
   border: 0px;
   margin-bottom: 0px;
   font-size: 1.5vw;
-}
+} */
 
-#services-content h2 {
-  padding: 0px;
-  border: 0px;
-  margin-bottom: 0px;
-  font-size: 2vw;
-}
+
 
 #services-content img {
   width: 70px;
@@ -298,6 +297,10 @@ header #logo {
 .service_description_group h2, p {
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+.service_description_group p {
+  padding-bottom: 50px; /* to get a space between the logo elements */
 }
 
 /***** CONTACT *****/
@@ -327,6 +330,26 @@ header #logo {
 }
 
 footer p {
-    font-size: 1vw;
-    padding-top: 80px;
+    font-size: calc(10px + 0.5vw); /* calculation to make a minimum font size (10px) and scaling by 0.5vw when changing window size */
+}
+
+#social_media_links img {
+    width: 3%;
+    min-width: 30px; /* to assure that the icon sizes doesn't shrink to much when reducing window size*/
+}
+
+#social_media_links {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+}
+
+#social_media_links ul li {
+  list-style: none;
+  display: inline
+}
+
+/* formatting social media link styles */
+#social_media_links ul li a {
+  text-decoration: none; /* so that text/links doesn't have an underline */
 }
