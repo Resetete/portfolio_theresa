@@ -5,8 +5,17 @@ body{
   /* font-family: 'Roboto Slab', sans-serif; */
 }
 
+p {
+  font-size: 20px;
+}
 
+h1 {
+  font-size: 70px;
+}
 
+h2 {
+  font-size: 30px;
+}
 /***** GRID *****/
 
 .full-width {
@@ -29,14 +38,6 @@ body{
   width: 66%;
 }
 
-.button {
-    background-color: #FCF9F9;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
-    padding: 5px 20px 5px 20px;
-    text-transform: uppercase;
-}
 
 
 /* Section introduction letters */
@@ -99,7 +100,7 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1.9vw; /* responsive text size */
+  font-size: 1.3vw; /* responsive text size */
   padding-left: 20px;
   text-transform: uppercase;
   font-weight: 400;
@@ -249,7 +250,8 @@ header #logo {
 #about_text p {
   color: white;
   line-height: 25px;
-  font-weight:  lighter;
+  font-weight: lighter;
+  font-size: 20px;
 }
 
 /***** SERVICES *****/
@@ -287,7 +289,15 @@ header #logo {
 }
 
 
+/* allows reducing the space between service name and description */
+.service_description_group {
+  line-height: 1.5;
+}
 
+.service_description_group h2, p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
 
 /***** CONTACT *****/
 
