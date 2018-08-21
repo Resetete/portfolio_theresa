@@ -1,23 +1,32 @@
 /***** BASE STYLES *****/
 body{
   background-color: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   /* font-family: 'Roboto Slab', sans-serif; */
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'Lato', sans-serif;
 }
 
 p {
   color: white;
   line-height: 1.4;
-  font-weight: lighter;
-  font-size: calc(20px + 0.5vw); /* responive font size */
+  font-weight: 400;
+  font-size: calc(16px + 0.5vw); /* responive font size */
+  font-family: 'Lato', sans-serif;
 }
 
 h2 {
   padding: 0px;
   border: 0px;
   margin-bottom: 0px;
-  font-size: calc(25px + 0.5vw); /* responsize font size */
+  font-size: calc(22px + 0.5vw); /* responsize font size */
   color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: calc(75px + 0.5vw); /* responsize font size */
+  font-family: 'Lato', sans-serif;
 }
 
 /***** GRID *****/
@@ -47,14 +56,16 @@ h2 {
 /* Section introduction letters */
 .section_headers {
   mix-blend-mode: overlay; /* to blend the text into the background */
-  font-size: 15vw; /* scaling font (responsive) */
+  font-size: calc(150px + 1vw); /* scaling font (responsive) */
   color: white;
   text-align: center;
   padding: 150px 0px 150px 0px;
   margin: 0px;
   border: 0px;
   text-transform: uppercase;
-  font-family: 'Titillium Web', sans-serif;
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 
 /* centering of images within divs */
@@ -130,9 +141,10 @@ header #logo {
   color: white;
   font-size: 5vw; /* responsive font size */
   padding: 90px 0px 0px 100px;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: black 900 ;
-
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: 'Lato', sans-serif;
+  font-weight: bold ;
+  line-height: 1.5;
 }
 
 #highlight_slogen1 {
@@ -149,7 +161,8 @@ header #logo {
 #action_slogan {
   padding-top: 250px;
   font-size: 2vw;
-  font-family: 'Titillium Web', sans-serif;
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -243,7 +256,16 @@ header #logo {
   margin: auto; /* to center the images horizontally and vertically within the div*/
   padding: 10% 15% 10% 15%;
   display: block;
-  text-align: justify; /* makes a blocksatz */
+  text-align: left; /* makes a blocksatz */
+}
+
+#quote {
+  font-size: calc(20px + 0.5vw);
+}
+
+.increase_font_size {
+  font-size: calc(25px + 0.5vw);
+  font-family: 'Titillium', serif;
 }
 
 /* #about_text p {
