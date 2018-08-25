@@ -10,7 +10,7 @@ body{
 p {
   color: white;
   line-height: 1.4;
-  font-weight: 400;
+  font-weight: 100;
   font-size: calc(16px + 0.5vw); /* responive font size */
   font-family: 'Lato', sans-serif;
 }
@@ -133,8 +133,7 @@ header #logo {
 
 #startpage {
   background: url('../img/background_foto_forest.png') no-repeat center center fixed;
-  min-height: 1000px;
-  height: auto;
+  height: 100vh; /* vh = viewport height = 100% :) to make the section 100% window height */
 }
 
 #slogan {
@@ -398,7 +397,7 @@ footer p {
 
 #social_media_links ul {
   margin: 0px;
-  padding: 0px;
+  padding: 10px 0px 0px 10px;
   border: 0px;
 }
 
@@ -410,5 +409,4 @@ footer p {
 /* formatting social media link styles */
 #social_media_links ul li a {
   text-decoration: none; /* so that text/links doesn't have an underline */
-
 }
