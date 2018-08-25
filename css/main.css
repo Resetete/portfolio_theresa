@@ -186,12 +186,39 @@ header #logo {
   mix-blend-mode: difference  ; /* DIFFERENCE hard-light overlay*/
 }
 
+/*** STATEMENT ***/
+
+#statement_welcome {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+
+#statement h2 {
+  height: auto;
+  background-color: #C490D1;
+  color: white;
+  border: 0px;
+  margin: 0px;
+  padding: 100px 200px 100px 200px;
+  font-family: 'Lato' ;
+  font-weight: 100;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+#statement:hover h2 { /* color background differently */
+  background-color: #2C81AE;
+}
+
 /***** WORK *****/
 #work {
   background: url('../img/work_water_from_space_background.png') no-repeat center top fixed;
 }
 
-#work_projects {
+#work_projects { /* project content items */
   background: #2D81AF;
   padding: 5% 10% 5% 10%; /* to assure that there are no spaces between other page sections*/
 }
@@ -237,9 +264,10 @@ header #logo {
 /* formatting caption */
 .work-project-description {
   color: white;
-  text-shadow: 1px 1px black; /* to have a black shadow */
   font-size: calc(20px + 0.5vw); /* allows responsive text size */
   padding-top: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
 }
 
 
@@ -252,28 +280,32 @@ header #logo {
 
 
 #about_text {
+  height: 300px;
   background: #C490D1;
-  height: 500px;
   margin: auto; /* to center the images horizontally and vertically within the div*/
-  padding: 10% 15% 10% 15%;
+  padding: 10% 20% 10% 20%;
   display: block;
-  text-align: left; /* makes a blocksatz */
+  text-align: center; /* makes a blocksatz */
+}
+
+#about_text p {
+  font-family: 'Lato',sans-serif ;
+  font-weight: 100;
+  line-height: 1.5;
 }
 
 #quote {
   font-size: calc(17px + 0.5vw);
+  font-family: 'Lato',sans-serif ;
+  font-weight: 100;
 }
 
 .increase_font_size {
   font-size: calc(25px + 0.5vw);
-  font-family: 'Titillium', serif;
+  font-family: 'Lato',sans-serif ;
+  font-weight: 100;
 }
 
-/* #about_text p {
-  color: white;
-  line-height: 25px;
-  font-weight: lighter;
-  font-size: calc(20px + 0.5vw); } /* responive font size */
 
 
 /***** SERVICES *****/
