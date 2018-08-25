@@ -106,6 +106,7 @@ header {
 nav {
   float: right;
   padding-top: 20px;
+  padding-right: 5vw; /* to have a larger distance between screen border and nav bar*/
 }
 
 nav ul li {
@@ -138,8 +139,8 @@ header #logo {
 
 #slogan {
   color: white;
-  font-size: 5vw; /* responsive font size */
-  padding: 90px 0px 0px 100px;
+  font-size: calc(20px + 4vw); /* responsive font size */
+  padding: 20vh 0px 0px 10vh; /* to let the slogan start at 25% of vertical screen height */
   /* font-family: 'Titillium Web', sans-serif; */
   font-family: 'Lato', sans-serif;
   font-weight: bold ;
@@ -148,19 +149,18 @@ header #logo {
 
 #highlight_slogen1 {
   color: #C490D1;
-  font-size: 6.5vw; /* responsive font size */
+  font-size: calc(25px + 5vw); /* responsive font size */
 }
 
 #highlight_slogen2 {
   color: #2D81AF;
-  font-size: 8vw; /* responsive font size */
+  font-size: calc(30px + 6vw); /* responsive font size */
   padding-left: 40px;
 }
 
 #action_slogan {
-  padding-top: 250px;
-  font-size: 2vw;
-  /* font-family: 'Titillium Web', sans-serif; */
+  padding-top: 35vh; /* to let the action slogan start at 35% of screen height */
+  font-size: calc(20px + 1.5vw);
   font-family: 'Lato', sans-serif;
 }
 
