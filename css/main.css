@@ -1,4 +1,8 @@
 /***** BASE STYLES *****/
+html, body {  /* should be set to make % sizes work correctly */
+    height:100%;
+}
+
 body{
   background-color: #FFFFFF;
   /* font-family: 'Open Sans', sans-serif; */
@@ -217,37 +221,21 @@ header #logo {
   background: url('../img/work_water_from_space_background.png') no-repeat center top fixed;
 }
 
-#work_projects { /* project content items */
+#work_projects { /* project content items (screenshots of portfolio projects done) */
   background: #2D81AF;
   padding: 5% 10% 5% 10%; /* to assure that there are no spaces between other page sections*/
+  height: auto; /* the height of the project section is defined by the elements in the grid  */
+  clear: both;
 }
 
-#work_project_item {
-  border: 0px;
-  margin: auto;
-  padding: auto;
-  overflow: hidden;
-  max-width: 900px;
-  list-style: none;
-}
-
-#work_projects li {
-  display: inline-block;
-  width: 30%;  /*set the width of the project logo elements*/
-  vertical-align: top; /* to put the logos on the top of the div element */
-  padding-right: 10px; /* distance between project logo items */
-  margin: 0px;
-  text-align: center; /* to center the project logos and desctiptions */
-  /*border: 1px solid red; */ /* to check the sizes and distribution of the logos*/
-}
-
-.work_projects_cell {
-  display: block;
-  overflow: hidden;
-}
-
-.work_projects_cell img {
-  border: none;
+/* project responsive grid */
+/* grid can have units like defines px or fr (fractions - to make the grid responsive) */
+.container {
+  text-align: center; /* to center the grid elements*/
+  display: grid;
+  grid-gap: 30px; /* separate the grid items by 30px */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) ); /* creates a grid with 4 columns and two rows */
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr) );
 }
 
 /* formatting work project logo */
@@ -259,12 +247,19 @@ header #logo {
   mix-blend-mode:  normal;
 }
 
+#work-project-logo_trigo:hover {
+  background: url('../img/project_detail_pages/screen_trigo.png') no-repeat top; /* top = placing background image on top of grid element (behind project logo) */
+  background-size: contain; /* to allow the full image to appear in the grid field */
+}
+
+
+
 
 /* formatting caption */
 .work-project-description {
   color: white;
   font-size: calc(20px + 0.5vw); /* allows responsive text size */
-  padding-top: 10px;
+  padding-top: 30px; /* get more space between caption and logo */
   font-family: 'Lato', sans-serif;
   font-weight: 100;
 }
