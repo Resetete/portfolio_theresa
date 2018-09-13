@@ -228,7 +228,7 @@ header #logo {
   clear: both;
 }
 
-/* project responsive grid */
+/* responsive grid to host the project icons and screens */
 /* grid can have units like defines px or fr (fractions - to make the grid responsive) */
 .container {
   text-align: center; /* to center the grid elements*/
@@ -238,39 +238,41 @@ header #logo {
   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr) );
 }
 
-/* formatting work project logo */
+/* formatting work project logos and screen */
+/* creating hover over effect with the project screen */
 .work-project-logo {
   mix-blend-mode: overlay;
 }
 
-.work-project-logo:hover {
-  mix-blend-mode:  normal;
+.grid_content_fields {
+  position: relative; /* thats needed to assure that the content of the grid is still within the grid field */
 }
 
-#work-project-logo_trigo:hover {
-  background: url('../img/project_detail_pages/screen_trigo.png') no-repeat top; /* top = placing background image on top of grid element (behind project logo) */
-  background-size: contain; /* to allow the full image to appear in the grid field */
+.project_icon {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-#work-project-logo_ntp:hover {
-  background: url('../img/project_detail_pages/ntp_screen.png') no-repeat top; /* top = placing background image on top of grid element (behind project logo) */
-  background-size: contain; /* to allow the full image to appear in the grid field */
+.overlay {
+  /* thats the screen overlayed over the project icon */
+  position: absolute; /* thats needed to put the overlay over the background image within the grid */
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease; /* to fade in the screens */
+  background-color: transparent;
+  vertical-align: middle;
 }
 
-#work-project-logo_yvonne:hover {
-  background: url('../img/project_detail_pages/yvonne_miller_screenshot.png') no-repeat top; /* top = placing background image on top of grid element (behind project logo) */
-  background-size: contain; /* to allow the full image to appear in the grid field */
+.grid_content_fields:hover .overlay {
+   opacity: 1; /* when hovering over the grid field the overlay image is shown */
 }
 
-#work-project-logo_yuna:hover {
-  background: url('../img/project_detail_pages/yunas_eye_photo_screen.png') no-repeat top; /* top = placing background image on top of grid element (behind project logo) */
-  background-size: contain; /* to allow the full image to appear in the grid field */
-}
-
-#work-project-logo_bolo:hover {
-  background: url('../img/project_detail_pages/boloderolo_screen.png') no-repeat top; /* top = placing background image on top of grid element (behind project logo) */
-  background-size: contain; /* to allow the full image to appear in the grid field */
-}
 
 /* formatting caption */
 .work-project-description {
