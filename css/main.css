@@ -252,8 +252,25 @@ header #logo {
   background-size: contain; /* to allow the full image to appear in the grid field */
 }
 
+#work-project-logo_ntp:hover {
+  background: url('../img/project_detail_pages/ntp_screen.png') no-repeat top; /* top = placing background image on top of grid element (behind project logo) */
+  background-size: contain; /* to allow the full image to appear in the grid field */
+}
 
+#work-project-logo_yvonne:hover {
+  background: url('../img/project_detail_pages/yvonne_miller_screenshot.png') no-repeat top; /* top = placing background image on top of grid element (behind project logo) */
+  background-size: contain; /* to allow the full image to appear in the grid field */
+}
 
+#work-project-logo_yuna:hover {
+  background: url('../img/project_detail_pages/yunas_eye_photo_screen.png') no-repeat top; /* top = placing background image on top of grid element (behind project logo) */
+  background-size: contain; /* to allow the full image to appear in the grid field */
+}
+
+#work-project-logo_bolo:hover {
+  background: url('../img/project_detail_pages/boloderolo_screen.png') no-repeat top; /* top = placing background image on top of grid element (behind project logo) */
+  background-size: contain; /* to allow the full image to appear in the grid field */
+}
 
 /* formatting caption */
 .work-project-description {
