@@ -12,6 +12,9 @@ magic_ball.select_random_answer = function (question)
 	$("#answer").hide();
 	// change the image of the ball to the red triangle when answer is revealed
 $("#8ball").attr("src","https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png");
+	//shake the ball
+$("#8ball").effect("shake");
+
 	//fade in the answer slowly
 	$("#answer").fadeIn(3000);
 
