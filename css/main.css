@@ -99,9 +99,9 @@ header {
   border: 0px;
   margin: 0px;
   padding: 0px;
-  background: url('../img/background_foto_forest.jpg') center center;
+  background-color: #1B2E28;
+  Opacity:0.6;
   border-bottom: 3px solid #24382B ;
-  position: fixed; /* so that the nav bar is always visible */
   width: 100%; /* to make the nav bar wisth the whole screen */
   background-size: cover;
 }
@@ -137,7 +137,7 @@ header #logo {
 /***** STARTPAGE *****/
 
 #startpage {
-  background: url('../img/background-foto-forest.jpg') no-repeat center center fixed;
+  background: url('../img/background-foto-forest.jpg') center center repeat;
   height: 100vh; /* vh = viewport height = 100% :) to make the section 100% window height */
 }
 
@@ -218,7 +218,7 @@ header #logo {
 
 /***** WORK *****/
 #work {
-  background: url('../img/work-water-from-space-background.jpg') no-repeat center top fixed;
+  background: url('../img/work-water-from-space-background.jpg') center top repeat;
 }
 
 #work-projects { /* project content items (screenshots of portfolio projects done) */
@@ -288,7 +288,7 @@ header #logo {
 
 /***** ABOUT *****/
 #about {
-  background: url('../img/background_services_water_from_space.jpg') center center fixed;
+  background: url('../img/background_services_water_from_space.jpg') center center;
 }
 
 
@@ -323,7 +323,7 @@ header #logo {
 
 /***** SERVICES *****/
 #services {
-  background: url('../img/background_contact.jpg') center top fixed;
+  background: url('../img/background_contact.jpg') center top no-repeat;
 }
 
 #services-content {
@@ -333,16 +333,6 @@ header #logo {
   color: white;
   height: 600px;
 }
-
-
-
-/* #services-content p {
-  padding: 0px;
-  border: 0px;
-  margin-bottom: 0px;
-  font-size: 1.5vw;
-} */
-
 
 
 #services-content img {
@@ -370,7 +360,7 @@ header #logo {
 /***** CONTACT *****/
 
 #contact {
-  background: url('../img/background_about_water_from_space.jpg') center center fixed;
+  background: url('../img/background_about_water_from_space.jpg') center center no-repeat;
 }
 
 #contact-content {
@@ -382,15 +372,13 @@ header #logo {
   line-height: 1.2;
 }
 
-
-
 /***** FOOTER *****/
 
 #copyright {
   text-align: center;
   padding-top: 20px;
   height: 300px;
-  background: url('../img/background_lastpic.jpg') center center fixed;
+  background: url('../img/background_lastpic.jpg') center center no-repeat;
   color: white;
 }
 
@@ -427,6 +415,33 @@ footer p {
 
 @media only screen and (min-width: 768px) {
   /* -------- tablet and desktop styles here   ----------*/
-  #startpage {
-    background: url('../img/background-foto-forest.jpg') no-repeat center center;
+      header {
+        position: fixed; /* so that the nav bar is always visible */
+      }
+
+      #startpage {
+        background: url('../img/background-foto-forest.jpg') center center no-repeat fixed;
+      }
+
+      #work {
+        background: url('../img/work-water-from-space-background.jpg') center top no-repeat fixed;
+      }
+
+      #about {
+        background: url('../img/background_services_water_from_space.jpg') center center no-repeat fixed;
+      }
+
+      #services {
+        background: url('../img/background_contact.jpg') center top no-repeat fixed;
+      }
+
+      #contact {
+        background: url('../img/background_about_water_from_space.jpg') center center no-repeat fixed;
+      }
+
+      #copyright {
+        background: url('../img/background_lastpic.jpg') center center fixed;
+      }
+
+
 }
