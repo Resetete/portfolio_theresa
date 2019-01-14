@@ -424,3 +424,9 @@ footer p {
 #social-media-links ul li a {
   text-decoration: none; /* so that text/links doesn't have an underline */
 }
+
+@media only screen and (min-width: 768px) {
+  /* -------- tablet and desktop styles here   ----------*/
+  #startpage {
+    background: url('../img/background-foto-forest.jpg') no-repeat center center;
+}
