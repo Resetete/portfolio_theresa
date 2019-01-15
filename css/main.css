@@ -226,8 +226,9 @@ header nav ul li a {
   color: white;
 }
 
-
-/* ------- Start Section ---------- */
+/*-----------------------------------------------------*/
+/* ------- Start Section ----------------------------- */
+/*-----------------------------------------------------*/
 
 .start-section {
   background: url('../img/background-foto-forest.jpg') center center repeat;
@@ -297,6 +298,57 @@ header nav ul li a {
 #chamaeleon:hover {
   mix-blend-mode: difference  ; /* DIFFERENCE hard-light overlay*/
 }
+
+/*-----------------------------------------------------*/
+/*------ mobile styles statement section --------------*/
+/*-----------------------------------------------------*/
+.statement {
+  background-color: #C490D1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statement:hover { /* color background differently */
+  background-color: #2C81AE;
+}
+
+.statement .content-wrapper {
+  padding: 50px 0;
+}
+
+#statement-welcome {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+
+.statement h2 {
+  height: auto;
+  background-color: #C490D1;
+  color: white;
+  border: 0px;
+  margin: 0px;
+  font-family: 'Lato' ;
+  font-weight: 100;
+  line-height: 1.5;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.statement:hover h2 { /* color background differently */
+  background-color: #2C81AE;
+}
+
+/*-----------------------------------------------------*/
+/*------ mobile styles WORK section --------------*/
+/*-----------------------------------------------------*/
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
@@ -386,9 +438,13 @@ header nav ul li a {
 
 @media only screen and (min-width: 768px) {
   /* -------- tablet and desktop styles here   ----------*/
-      
+      /*header {
+        position: fixed;
+      } */
 
-
+      .start-section {
+        background: url('../img/background-foto-forest.jpg') center center repeat fixed;
+      }
 }
 
 
