@@ -182,8 +182,9 @@ header .content-wrapper {
   border-top: 1px solid #1B2E28;
 }
 
+/* logo header setting */
 header figure {
-  width: 30%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center; /* to center the logo for mobile first */
@@ -293,6 +294,10 @@ header nav ul li a {
   left: 20px;
 }
 
+#chamaeleon:hover {
+  mix-blend-mode: difference  ; /* DIFFERENCE hard-light overlay*/
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -381,56 +386,7 @@ header nav ul li a {
 
 @media only screen and (min-width: 768px) {
   /* -------- tablet and desktop styles here   ----------*/
-      header {
-        position: fixed; /* so that the nav bar is always visible */
-      }
-
-      header .content-wrapper { /* keeps header logo and nav bar inline */
-        flex-flow: row nowrap;
-      }
-
-      header nav {
-        padding: 20px 50px;
-      }
-
-      header figure {
-        flex-flow: row nowrap;
-      }
-
-      .header-divider {
-        flex-grow: 1;
-        border: 0;
-        height: 0;
-        margin: 0;
-      }
-
-      header nav ul {
-        flex-flow: row nowrap;
-      }
-
-      #startpage {
-        background: url('../img/background-foto-forest.jpg') center center no-repeat fixed;
-      }
-
-      #work {
-        background: url('../img/work-water-from-space-background.jpg') center top no-repeat fixed;
-      }
-
-      #about {
-        background: url('../img/background_services_water_from_space.jpg') center center no-repeat fixed;
-      }
-
-      #services {
-        background: url('../img/background_contact.jpg') center top no-repeat fixed;
-      }
-
-      #contact {
-        background: url('../img/background_about_water_from_space.jpg') center center no-repeat fixed;
-      }
-
-      #copyright {
-        background: url('../img/background_lastpic.jpg') center center fixed;
-      }
+      
 
 
 }
