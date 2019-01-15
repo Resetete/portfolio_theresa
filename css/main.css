@@ -117,12 +117,14 @@ footer {
 h1 {
   font-size: 1em; /* responsize font size */
   font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 h2 {
   padding: 0px;
   border: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
   font-size: 1.2em; /* responsize font size */
   color: white;
   font-family: 'Lato', sans-serif;
@@ -136,14 +138,6 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
-a {
-  font-size: 2em;
-  color: white;
-  text-decoration: none; /* so that text/links doesn't have an underline */
-  padding: 0 20px;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
 
 img {
   width: 100%;
@@ -227,21 +221,77 @@ header nav ul li a {
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 1em;
+  text-decoration: none;
+  color: white;
 }
 
 
-
-/***** STARTPAGE *****/
+/* ------- Start Section ---------- */
 
 .start-section {
   background: url('../img/background-foto-forest.jpg') center center repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh; /* 80% of screen height */
+  flex-flow: row wrap;
+  height: 72vh; /* 72% of screen height */
 }
 
+.start-section .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* left align items */
+    flex-flow: row wrap;
+  }
 
+.slogan {
+  color: white;
+  font-size: 1.3em; /* responsive font size */
+  font-family: 'Lato', sans-serif;
+  font-weight: bold ;
+  line-height: 1.5;
+}
+
+.action-slogan {
+  font-size: 1.1em;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  flex-basis: 10%;
+}
+
+#highlight-slogen1 {
+  color: #C490D1;
+  font-size: 1.5em; /* responsive font size */
+}
+
+#highlight-slogen2 {
+  color: #2D81AF;
+  font-size: 1.7em; /* responsive font size */
+  padding-left: 10px;
+}
+
+#startpage-button {
+  margin-top: 5px;
+}
+
+/* chamaleon setting */
+.start-section figure {
+  width: 30%;
+  min-width: 50px;
+  max-width: 100px;
+  position: relative; /* to allow setting position of img withing figure tag */
+  overflow: visible;
+}
+
+#chamaeleon {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
 
 /* ==========================================================================
    Helper classes
