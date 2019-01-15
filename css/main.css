@@ -1,14 +1,14 @@
 /***** BASE STYLES *****/
-html, body {  /* should be set to make % sizes work correctly */
-    height:100%;
+html {
+    width: 100%;
+    font-size: 16px; /* setting base font size for ems */
 }
 
 body{
   background-color: #FFFFFF;
-  /* font-family: 'Open Sans', sans-serif; */
-  /* font-family: 'Roboto Slab', sans-serif; */
-  /* font-family: 'Source Sans Pro', sans-serif; */
   font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  width: 100%;
 }
 
 p {
@@ -33,26 +33,26 @@ h1 {
   font-family: 'Lato', sans-serif;
 }
 
-/***** GRID *****/
-
-.full-width {
-  margin: 0 auto;
+img {
   width: 100%;
 }
 
-.half-width {
-  float: left;
-  width: 50%;
+figure {
+  margin: 0;
 }
 
-.third-width {
-  float: left;
-  width: 33%;
+a {
+  font-size: 2em;
+  color: white;
+  text-decoration: none; /* so that text/links doesn't have an underline */
+  padding-left: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
-.two-third-width {
-  float: left;
-  width: 66%;
+.content-wrapper {
+  display: flex;
+  width: 90%;
 }
 
 
@@ -67,17 +67,8 @@ h1 {
   margin: 0px;
   border: 0px;
   text-transform: uppercase;
-  /* font-family: 'Titillium Web', sans-serif; */
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-}
-
-/* centering of images within divs */
-.centering {
-  margin-right: auto; /* to center the images horizontally and vertically within the div*/
-  margin-left: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 /* making text bold */
@@ -96,17 +87,15 @@ h1 {
 
 header {
   display: flex;
-  align-items: center;
+  align-items: space-between;
   justify-content: center;
   flex-flow: row wrap;
   background-color: #1B2E28;
-  opacity:0.6;
+  opacity: 0.6;
   width: 100%; /* to make the nav bar width the whole screen */
 }
 
 header .content-wrapper {
-  width: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
@@ -120,7 +109,7 @@ header .content-wrapper {
 }
 
 header figure {
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center; /* to center the logo for mobile first */
@@ -128,6 +117,7 @@ header figure {
 }
 
 header nav {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
@@ -139,26 +129,13 @@ header nav ul {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
-  display: inline;
-  text-transform: uppercase;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none; /* so that text/links doesn't have an underline */
-  font-size: calc(10px + 0.5vw); /* responsive text size with min font size 15x */
-  padding-left: 20px;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-header #logo {
-  padding: 20px 0 0 10%;
-  margin: 0px;
-  border: 0px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 
@@ -206,11 +183,9 @@ header #logo {
 }
 
 
-#chamaeleon {
-  padding-left: 40%;
-  padding-top: 140px;
+.start-section figure {
   mix-blend-mode: normal;
-  position: absolute;
+  width: 200px;
 }
 
 #chamaeleon:hover {
@@ -221,7 +196,7 @@ header #logo {
 
 #statement-welcome {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2em;
   padding-bottom: 10px;
 }
 
@@ -445,6 +420,29 @@ footer p {
   /* -------- tablet and desktop styles here   ----------*/
       header {
         position: fixed; /* so that the nav bar is always visible */
+      }
+
+      header .content-wrapper { /* keeps header logo and nav bar inline */
+        flex-flow: row nowrap;
+      }
+
+      header nav {
+        padding: 20px 50px;
+      }
+
+      header figure {
+        flex-flow: row nowrap;
+      }
+
+      .header-divider {
+        flex-grow: 1;
+        border: 0;
+        height: 0;
+        margin: 0;
+      }
+
+      header nav ul {
+        flex-flow: row nowrap;
       }
 
       #startpage {
