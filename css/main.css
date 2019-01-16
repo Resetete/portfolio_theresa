@@ -270,17 +270,24 @@ header nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: row wrap;
   height: 90vh; /* 90% of screen height */
 }
 
 .start-section .content-wrapper {
     margin: 50px 0;
+    padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* left align items */
+    justify-content: center; /* left align items */
     flex-flow: row wrap;
   }
+
+.item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
 
 .slogan {
   color: white;
@@ -319,19 +326,21 @@ header nav ul li a {
   background-color: transparent;  /* needed to have the transparent part of the png showing off  */
 }
 
+
 /* chamaleon setting */
 .start-section figure {
-  width: 30%;
-  min-width: 50px;
-  max-width: 100px;
+  width: 100%;
+  min-width: 100px;
+  max-width: 500px;
   position: relative; /* to allow setting position of img withing figure tag */
   overflow: visible;
 }
 
 #chamaeleon {
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: -30px;
+  left: 30px;
+  width: 100%;
 }
 
 #chamaeleon:hover {
