@@ -209,7 +209,6 @@ header .content-wrapper-header {
   width: 90%;
 }
 
-
 .header-divider {
   width: 100%;
   height: 1px;
@@ -549,7 +548,6 @@ header nav ul li a {
   height: 20vh;
 }
 
-
 .services-content {
   display: flex;
   align-items: center;
@@ -651,6 +649,68 @@ header nav ul li a {
   text-decoration: none;
 }
 
+/*-----------------------------------------------------*/
+/*------ mobile styles FOOTER section --------------*/
+/*-----------------------------------------------------*/
+
+ footer {
+   background: url('../img/background_lastpic.jpg') center center no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+footer .content-wrapper {
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 0px;
+}
+
+footer .content-wrapper figure {
+  width: 10%;
+  padding-bottom: 10px;
+}
+
+.social-media-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-links ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-links ul li figure {
+  width: 60%; /* adjust size of social media icons */
+  padding: 0 ;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.social-media-links ul li a { /* adjust position of social media icons */
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
