@@ -370,7 +370,7 @@ header nav ul li a {
   height: 20vh;
 }
 
-#work-projects { /* project content items (screenshots of portfolio projects done) */
+.work-projects { /* project content items (screenshots of portfolio projects done) */
   background: #2D81AF;
   padding: 5% 10% 5% 10%; /* to assure that there are no spaces between other page sections*/
   height: auto; /* the height of the project section is defined by the elements in the grid  */
@@ -383,8 +383,8 @@ header nav ul li a {
   text-align: center; /* to center the grid elements*/
   display: grid;
   grid-gap: 30px; /* separate the grid items by 30px */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) ); /* creates a grid with 4 columns and two rows */
-  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr) ); /* creates a grid with 4 columns and two rows & defines size of grid fields */
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr) );
 }
 
 /* formatting work project logos and screen */
