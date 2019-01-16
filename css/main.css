@@ -156,6 +156,13 @@ figure {
   padding: 50px 0;
 }
 
+.content-wrapper-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
 
 .section-header { /* centers the section separation namings */
   display: flex;
@@ -438,7 +445,7 @@ header nav ul li a {
 /*-----------------------------------------------------*/
 
 #about-section {
-  background: url('../img/background_services_water_from_space.jpg') center center no-repeat;
+  background: url('../img/background-services-water-from-space.jpg') center center no-repeat;
   height: 20vh;
 }
 
@@ -467,6 +474,10 @@ header nav ul li a {
 
 .increase-font-size {
   font-size: 1.1em;
+}
+
+#skills {
+  padding: 0 30px;
 }
 
 #tooltip {
@@ -522,6 +533,79 @@ header nav ul li a {
 [tooltip]:hover::after,
 [tooltip]:hover::before {
    opacity:1
+}
+
+/*-----------------------------------------------------*/
+/*------ mobile styles SERVICES section --------------*/
+/*-----------------------------------------------------*/
+
+#services-section {
+  background: url('../img/background-contact.jpg') center top no-repeat;
+  height: 20vh;
+}
+
+
+.services-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2D81AF;
+}
+
+.services-content .content-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-content figure {
+  width: 20%;
+  min-width: 50px;
+}
+
+.services-first-line {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+}
+
+.services-second-line {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+.services-third-line {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+}
+
+.services-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.service-description-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.service-description-group p {
+  text-align: center;
+  max-width: 100px;
+}
+
+.service-description-group h2 {
+  padding-top: 5px;
 }
 
 
