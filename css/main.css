@@ -164,6 +164,7 @@ figure {
 }
 
 
+
 .section-header { /* centers the section separation namings */
   display: flex;
   align-items: center;
@@ -200,12 +201,14 @@ header {
   z-index: 2000;
 }
 
-header .content-wrapper {
+header .content-wrapper-header {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
   width: 90%;
 }
+
 
 .header-divider {
   width: 100%;
