@@ -206,7 +206,7 @@ header .content-wrapper {
 
 /* logo header setting */
 header figure {
-  width: 10%;
+  width: 10%; /* sets size of figure / logo */
   display: flex;
   align-items: center;
   justify-content: center; /* to center the logo for mobile first */
@@ -219,31 +219,31 @@ header nav {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  width: 60%;
+  width: 90%; /* nav bar width */
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row wrap; /* nav bar items are placed next to each other  */
   margin: 0;
   padding: 0;
 }
 
 header nav ul li {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center ;
+  justify-content: space-around;
   flex-flow: row wrap;
-  padding: 5px 0;
+  padding: 0 5px 10px 5px; /* spreads the nav bar items */
 }
 
 header nav ul li a {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 1em;
+  font-size: 0.7em;
   text-decoration: none;
   color: white;
   padding: 0 3px;
@@ -259,7 +259,7 @@ header nav ul li a {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  height: 80vh; /* 72% of screen height */
+  height: 85vh; /* 85% of screen height */
 }
 
 .start-section .content-wrapper {
