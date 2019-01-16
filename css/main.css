@@ -271,7 +271,7 @@ header nav ul li a {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  height: 85vh; /* 85% of screen height */
+  height: 90vh; /* 90% of screen height */
 }
 
 .start-section .content-wrapper {
