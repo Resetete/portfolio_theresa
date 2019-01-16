@@ -150,10 +150,26 @@ figure {
 
 .content-wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 90%;
 }
 
 
+.section-header { /* centers the section separation namings */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header-text {
+  mix-blend-mode: overlay; /* to blend the text into the background */
+  font-size: 4em; /* scaling font (responsive) */
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
 
 
 /***** HEADER *****/
@@ -164,8 +180,14 @@ header {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #1B2E28;
-  background: url('../img/background-foto-forest.jpg') center center repeat;
+  background: url('../img/background-foto-forest.jpg') center center no-repeat;
   opacity: 0.9;
+  position: sticky; /* to make header fixed (use for desktop and tablet only) */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2000;
 }
 
 header .content-wrapper {
@@ -184,7 +206,7 @@ header .content-wrapper {
 
 /* logo header setting */
 header figure {
-  width: 20%;
+  width: 10%;
   display: flex;
   align-items: center;
   justify-content: center; /* to center the logo for mobile first */
@@ -231,12 +253,12 @@ header nav ul li a {
 /*-----------------------------------------------------*/
 
 .start-section {
-  background: url('../img/background-foto-forest.jpg') center center repeat;
+  background: url('../img/background-foto-forest.jpg') center center no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  height: 72vh; /* 72% of screen height */
+  height: 80vh; /* 72% of screen height */
 }
 
 .start-section .content-wrapper {
@@ -343,8 +365,72 @@ header nav ul li a {
 /*-----------------------------------------------------*/
 /*------ mobile styles WORK section --------------*/
 /*-----------------------------------------------------*/
+#work-section {
+  background: url('../img/work-water-from-space-background.jpg') center center no-repeat;
+  height: 20vh;
+}
+
+#work-projects { /* project content items (screenshots of portfolio projects done) */
+  background: #2D81AF;
+  padding: 5% 10% 5% 10%; /* to assure that there are no spaces between other page sections*/
+  height: auto; /* the height of the project section is defined by the elements in the grid  */
+  clear: both;
+}
+
+/* responsive grid to host the project icons and screens */
+/* grid can have units like defines px or fr (fractions - to make the grid responsive) */
+.container {
+  text-align: center; /* to center the grid elements*/
+  display: grid;
+  grid-gap: 30px; /* separate the grid items by 30px */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) ); /* creates a grid with 4 columns and two rows */
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr) );
+}
+
+/* formatting work project logos and screen */
+/* creating hover over effect with the project screen */
+.work-project-logo {
+  mix-blend-mode: overlay;
+}
+
+.grid-content-fields {
+  position: relative; /* thats needed to assure that the content of the grid is still within the grid field */
+}
+
+.project-icon {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  /* thats the screen overlayed over the project icon */
+  position: absolute; /* thats needed to put the overlay over the background image within the grid */
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease; /* to fade in the screens */
+  background-color: transparent;
+  vertical-align: middle;
+}
+
+.grid-content-fields:hover .overlay {
+   opacity: 1; /* when hovering over the grid field the overlay image is shown */
+}
 
 
+/* formatting caption */
+.work-project-description {
+  color: white;
+  font-size: calc(20px + 0.5vw); /* allows responsive text size */
+  padding-top: 30px; /* get more space between caption and logo */
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
 
 
 
