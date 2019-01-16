@@ -132,7 +132,7 @@ h2 {
 
 p {
   color: white;
-  line-height: 1.4;
+  line-height: 1.5;
   font-weight: 100;
   font-size: 1em; /* responive font size */
   font-family: 'Lato', sans-serif;
@@ -153,6 +153,7 @@ figure {
   align-items: center;
   justify-content: center;
   width: 90%;
+  padding: 50px 0;
 }
 
 
@@ -375,7 +376,6 @@ header nav ul li a {
   background: #2D81AF;
   padding: 5% 10% 5% 10%; /* to assure that there are no spaces between other page sections*/
   height: auto; /* the height of the project section is defined by the elements in the grid  */
-  clear: both;
 }
 
 /* responsive grid to host the project icons and screens */
@@ -437,6 +437,54 @@ header nav ul li a {
 /*------ mobile styles ABOUT section --------------*/
 /*-----------------------------------------------------*/
 
+#about-section {
+  background: url('../img/background_services_water_from_space.jpg') center center no-repeat;
+  height: 20vh;
+}
+
+
+.about-text {
+  background: #C490D1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.about-text figure {
+  width: 20%;
+}
+
+#quote {
+  font-size: 1.1em;
+}
+
+.increase-font-size {
+  font-size: 1.1em;
+}
+
+/* setting up the tooltip */
+[tooltip] {
+  margin: 20px;
+  position: relative; /* relative positioned to the text object */
+}
+
+[tooltip]::before {
+  content: ""; /* before hovering over the text, there is no content shown */
+  position: absolute;
+  z-index: 100;
+}
+
+[tooltip]::after {
+  content: attr(tooltip);
+
+}
 
 
 
