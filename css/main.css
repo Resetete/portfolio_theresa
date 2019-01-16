@@ -319,10 +319,8 @@ header nav ul li a {
 
 #startpage-button {
   margin-top: 5px;
-}
-
-#startpage-button img {
   background-color: transparent;  /* needed to have the transparent part of the png showing off  */
+  border: 0;
 }
 
 
