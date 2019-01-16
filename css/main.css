@@ -180,7 +180,9 @@ figure {
 }
 
 
-/***** HEADER *****/
+/*-----------------------------------------------------*/
+/* ------- HEADER ----------------------------- */
+/*-----------------------------------------------------*/
 
 header {
   display: flex;
@@ -258,7 +260,7 @@ header nav ul li a {
 }
 
 /*-----------------------------------------------------*/
-/* ------- Start Section ----------------------------- */
+/* ------- START Mobile styled section ----------------------------- */
 /*-----------------------------------------------------*/
 
 .start-section {
@@ -331,7 +333,7 @@ header nav ul li a {
 }
 
 /*-----------------------------------------------------*/
-/*------ mobile styles statement section --------------*/
+/*------ mobile styles STATEMENT section --------------*/
 /*-----------------------------------------------------*/
 .statement {
   background-color: #C490D1;
@@ -608,6 +610,43 @@ header nav ul li a {
   padding-top: 5px;
 }
 
+/*-----------------------------------------------------*/
+/*------ mobile styles CONTACT section --------------*/
+/*-----------------------------------------------------*/
+
+#contact-section {
+  background: url('../img/background-about-water-from-space.jpg') center center no-repeat;
+  height: 20vh;
+}
+
+.contact-section {
+  background-color: #189A83;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-section .content-wrapper {
+  flex-flow: column;
+}
+
+.contact-section address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+#email {
+  background: #2A7EAB;
+  padding: 10px;
+  margin: 10px 0 0 0;
+}
+
+#email a {
+  color: white;
+  text-decoration: none;
+}
 
 /* ==========================================================================
    Helper classes
