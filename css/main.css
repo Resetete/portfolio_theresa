@@ -224,9 +224,9 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-flow: column;
+  flex-flow: row wrap;
   margin: 0;
   padding: 0;
 }
@@ -246,6 +246,7 @@ header nav ul li a {
   font-size: 1em;
   text-decoration: none;
   color: white;
+  padding: 0 3px;
 }
 
 /*-----------------------------------------------------*/
@@ -432,6 +433,9 @@ header nav ul li a {
   font-weight: 100;
 }
 
+/*-----------------------------------------------------*/
+/*------ mobile styles ABOUT section --------------*/
+/*-----------------------------------------------------*/
 
 
 
