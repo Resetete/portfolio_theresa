@@ -315,6 +315,10 @@ header nav ul li a {
   margin-top: 5px;
 }
 
+#startpage-button img {
+  background-color: transparent;  /* needed to have the transparent part of the png showing off  */
+}
+
 /* chamaleon setting */
 .start-section figure {
   width: 30%;
@@ -649,29 +653,6 @@ header nav ul li a {
   text-decoration: none;
 }
 
-/*-----------------------------------------------------*/
-/*------ mobile styles FOOTER section --------------*/
-/*-----------------------------------------------------*/
-
- footer {
-   background: url('../img/background_lastpic.jpg') center center no-repeat;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
-
-footer .content-wrapper {
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  padding-bottom: 0px;
-}
-
-footer .content-wrapper figure {
-  width: 10%;
-  padding-bottom: 10px;
-}
 
 .social-media-links {
   display: flex;
@@ -711,6 +692,32 @@ footer .content-wrapper figure {
   align-items: center;
   display: flex;
 }
+
+/*-----------------------------------------------------*/
+/*------ mobile styles FOOTER section --------------*/
+/*-----------------------------------------------------*/
+
+ footer {
+   background: url('../img/background_lastpic.jpg') center center no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+footer .content-wrapper {
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 0px;
+}
+
+footer .content-wrapper figure {
+  width: 10%;
+  padding-bottom: 10px;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
