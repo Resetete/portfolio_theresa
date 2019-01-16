@@ -469,23 +469,60 @@ header nav ul li a {
   font-size: 1.1em;
 }
 
+#tooltip {
+  margin: 0;
+  padding: 0 3px;
+  background-color: rgba(219,27,149,0.7);
+}
+
 /* setting up the tooltip */
 [tooltip] {
   margin: 20px;
+  display: inline-block;
   position: relative; /* relative positioned to the text object */
+}
+
+#tooltip:hover {
+  box-shadow: 0, 0 0 0 1px rgba(0,0,0,0.8); /* setting a border and shadow around the target word */
 }
 
 [tooltip]::before {
   content: ""; /* before hovering over the text, there is no content shown */
   position: absolute;
   z-index: 100;
+  visibility: hidden;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
 }
 
 [tooltip]::after {
   content: attr(tooltip);
-
+  position: absolute;
+  background: rgba(219,27,149,0.7);
+  left: 50%;
+  top: -16px;
+  transform: translateX(-50%) translateY(-120%);
+  min-width: 150px;
+  pointer-events: none;
+  opacity: 0;
+  padding: 10px;
+  font-size: 0.9em;
 }
 
+[tooltip-position='top']::before {
+  top: 50%;
+}
+
+[tooltip-position='top']::after {
+  top: 50%;
+}
+
+[tooltip]:hover::after,
+[tooltip]:hover::before {
+   opacity:1
+}
 
 
 /* ==========================================================================
