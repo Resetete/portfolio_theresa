@@ -458,6 +458,7 @@ header nav ul li a {
 .work-project-description {
   font-size: 1em; /* allows responsive text size */
   padding-left: 10px; /* get more space between caption and logo */
+  min-width: 45%;
 }
 
 .text-strong-highlight { /* making text bold */
@@ -683,6 +684,8 @@ header nav ul li a {
 
 .social-media-links {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   width: 50%; /* makes the container div with social media icons smaller to keep icons closer together */
@@ -879,23 +882,23 @@ footer p {
       }
 
       #work-section {
-        background: url('../img/work-water-from-space-background.jpg') center center no-repeat fixed;
+        background: url('../img/work-water-from-space-background.jpg') center center repeat fixed;
       }
 
       #about-section {
-        background: url('../img/background-services-water-from-space.jpg') center center no-repeat fixed;
+        background: url('../img/background-services-water-from-space.jpg') center center repeat fixed;
       }
 
       #services-section {
-        background: url('../img/background-contact.jpg') center top no-repeat fixed;
+        background: url('../img/background-contact.jpg') center top repeat fixed;
       }
 
       #contact-section {
-        background: url('../img/background-about-water-from-space.jpg') center center no-repeat fixed;
+        background: url('../img/background-about-water-from-space.jpg') center center repeat fixed;
       }
 
       footer {
-         background: url('../img/background_lastpic.jpg') center center no-repeat fixed;
+         background: url('../img/background_lastpic.jpg') center center repeat fixed;
       }
 
       footer p {
