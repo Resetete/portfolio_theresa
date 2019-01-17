@@ -682,7 +682,7 @@ header nav ul li a {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 30%; /* makes the container div with social media icons smaller to keep icons closer together */
+  width: 50%; /* makes the container div with social media icons smaller to keep icons closer together */
 }
 
 .social-media-links ul {
@@ -701,7 +701,7 @@ header nav ul li a {
 }
 
 .social-media-links ul li figure {
-  width: 70%; /* adjust size of social media icons */
+  width: 90%; /* adjust size of social media icons */
   padding: 0 ;
   margin: 0;
   display: flex;
@@ -743,7 +743,7 @@ footer .content-wrapper figure {
 }
 
 footer p {
-  font-size: 0.5em;
+  font-size: 1em;
 }
 
 
@@ -880,6 +880,10 @@ footer p {
 
       footer {
          background: url('../img/background_lastpic.jpg') center center no-repeat fixed;
+      }
+
+      footer p {
+        font-size: 0.5em;
       }
 }
 
