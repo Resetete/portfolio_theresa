@@ -897,6 +897,15 @@ footer p {
         background: url('../img/background-about-water-from-space.jpg') center center repeat fixed;
       }
 
+      .social-media-links ul li figure {
+        width: 60%; /* adjust size of social media icons */
+        padding: 0 ;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       footer {
          background: url('../img/background_lastpic.jpg') center center repeat fixed;
       }
