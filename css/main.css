@@ -426,7 +426,10 @@ header nav ul li a {
 }
 
 .project-icon {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
   width: 100%;
   height: auto;
 }
@@ -454,7 +457,7 @@ header nav ul li a {
 /* formatting caption */
 .work-project-description {
   font-size: 1em; /* allows responsive text size */
-  padding-top: 30px; /* get more space between caption and logo */
+  padding-left: 10px; /* get more space between caption and logo */
 }
 
 .text-strong-highlight { /* making text bold */
@@ -463,7 +466,7 @@ header nav ul li a {
 
 .smaller-font-italic {
   font-style: italic;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 /*-----------------------------------------------------*/
@@ -856,6 +859,19 @@ footer p {
         justify-content: space-around;
         flex-flow: row nowrap;
         padding: 0 0.3em 0 0.3em; /* spreads the nav bar items */
+      }
+
+      /* setting work prject style */
+      .project-icon {
+        display: block; /* puts symbol and description below of each other */
+        width: 100%;
+        height: auto;
+      }
+
+      /* formatting caption */
+      .work-project-description {
+        font-size: 1em; /* allows responsive text size */
+        padding-top: 30px; /* get more space between caption and logo */
       }
 
       .start-section {
