@@ -852,6 +852,26 @@ footer p {
       .start-section {
         background: url('../img/background-foto-forest.jpg') center center repeat fixed;
       }
+
+      #work-section {
+        background: url('../img/work-water-from-space-background.jpg') center center no-repeat fixed;
+      }
+
+      #about-section {
+        background: url('../img/background-services-water-from-space.jpg') center center no-repeat fixed;
+      }
+
+      #services-section {
+        background: url('../img/background-contact.jpg') center top no-repeat fixed;
+      }
+
+      #contact-section {
+        background: url('../img/background-about-water-from-space.jpg') center center no-repeat fixed;
+      }
+
+      footer {
+         background: url('../img/background_lastpic.jpg') center center no-repeat fixed;
+      }
 }
 
 
