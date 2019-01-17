@@ -168,6 +168,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 30vh; /* height of the section separations */
 }
 
 .section-header-text {
@@ -352,6 +353,7 @@ header nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 45vh; /* the section should at least be 20% of screen height */
 }
 
 .statement:hover { /* color background differently */
@@ -390,7 +392,6 @@ header nav ul li a {
 /*-----------------------------------------------------*/
 #work-section {
   background: url('../img/work-water-from-space-background.jpg') center center no-repeat;
-  height: 20vh;
 }
 
 .work-projects { /* project content items (screenshots of portfolio projects done) */
@@ -468,7 +469,6 @@ header nav ul li a {
 
 #about-section {
   background: url('../img/background-services-water-from-space.jpg') center center no-repeat;
-  height: 20vh;
 }
 
 
@@ -563,7 +563,6 @@ header nav ul li a {
 
 #services-section {
   background: url('../img/background-contact.jpg') center top no-repeat;
-  height: 20vh;
 }
 
 .services-content {
@@ -645,7 +644,6 @@ header nav ul li a {
 
 #contact-section {
   background: url('../img/background-about-water-from-space.jpg') center center no-repeat;
-  height: 20vh;
 }
 
 .contact-section {
