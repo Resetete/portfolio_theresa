@@ -154,7 +154,7 @@ figure {
   align-items: center;
   justify-content: center;
   width: 90%;
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 .content-wrapper-section {
@@ -320,7 +320,7 @@ header nav ul li a {
 }
 
 #startpage-button {
-  margin-top: 5px;
+  margin-top: 15px; /* distance between slogan and button */
   background-color: transparent;  /* needed to have the transparent part of the png showing off  */
   border: 0;
 }
@@ -371,20 +371,14 @@ header nav ul li a {
   padding-bottom: 10px;
 }
 
-.statement h2 {
-  height: auto;
+.statement p {
   background-color: #C490D1;
-  color: white;
   border: 0px;
   margin: 0px;
-  font-family: 'Lato' ;
-  font-weight: 100;
-  line-height: 1.5;
-  font-size: 1.25em;
   text-align: center;
 }
 
-.statement:hover h2 { /* color background differently */
+.statement:hover p { /* color background differently */
   background-color: #2C81AE;
 }
 
@@ -397,7 +391,6 @@ header nav ul li a {
 
 .work-projects { /* project content items (screenshots of portfolio projects done) */
   background: #2D81AF;
-  padding: 5% 10% 5% 10%; /* to assure that there are no spaces between other page sections*/
   height: auto; /* the height of the project section is defined by the elements in the grid  */
   display: flex;
   justify-content: center;
@@ -720,7 +713,7 @@ header nav ul li a {
 /*------ mobile styles FOOTER section --------------*/
 /*-----------------------------------------------------*/
 
- footer {
+footer {
    background: url('../img/background_lastpic.jpg') center center no-repeat;
    display: flex;
    align-items: center;
@@ -739,6 +732,11 @@ footer .content-wrapper figure {
   width: 10%;
   padding-bottom: 10px;
 }
+
+footer p {
+  font-size: 0.5em;
+}
+
 
 
 /* ==========================================================================
@@ -835,7 +833,7 @@ footer .content-wrapper figure {
       }
 
       header figure {
-        width: 20%; /* sets size of figure / logo */
+        width: 15%; /* sets size of figure / logo */
         padding-top: 0;
       }
 
