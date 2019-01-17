@@ -680,6 +680,7 @@ header nav ul li a {
   display: flex;
   margin: 0;
   padding: 0;
+  width: 30%; /* makes the container div with social media icons smaller to keep icons closer together */
 }
 
 .social-media-links ul {
@@ -698,7 +699,7 @@ header nav ul li a {
 }
 
 .social-media-links ul li figure {
-  width: 60%; /* adjust size of social media icons */
+  width: 70%; /* adjust size of social media icons */
   padding: 0 ;
   margin: 0;
   display: flex;
