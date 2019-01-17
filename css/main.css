@@ -457,6 +457,15 @@ header nav ul li a {
   padding-top: 30px; /* get more space between caption and logo */
 }
 
+.text-strong-highlight { /* making text bold */
+  font-weight: bold;
+}
+
+.smaller-font-italic {
+  font-style: italic;
+  font-size: 0.7em;
+}
+
 /*-----------------------------------------------------*/
 /*------ mobile styles ABOUT section --------------*/
 /*-----------------------------------------------------*/
