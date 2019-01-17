@@ -213,8 +213,8 @@ header .content-wrapper-header {
 .header-divider {
   width: 100%;
   height: 1px;
-  margin: 10px 0;
-  border-top: 1px solid #1B2E28;
+  margin: 0.63em 0;
+  border-top: 0.06em solid #1B2E28;
 }
 
 /* logo header setting */
@@ -224,7 +224,7 @@ header figure {
   align-items: center;
   justify-content: center; /* to center the logo for mobile first */
   flex-flow: row wrap;
-  padding-top: 20px;
+  padding-top: 1.25em;
 }
 
 header nav {
@@ -249,7 +249,7 @@ header nav ul li {
   align-items: center ;
   justify-content: space-around;
   flex-flow: row wrap;
-  padding: 0 5px 10px 5px; /* spreads the nav bar items */
+  padding: 0 0.3em 0.6em 0.3em; /* spreads the nav bar items */
 }
 
 header nav ul li a {
@@ -259,7 +259,7 @@ header nav ul li a {
   font-size: 0.7em;
   text-decoration: none;
   color: white;
-  padding: 0 3px;
+  padding: 0 0.2em;
 }
 
 /*-----------------------------------------------------*/
@@ -471,7 +471,6 @@ header nav ul li a {
 #about-section {
   background: url('../img/background-services-water-from-space.jpg') center center no-repeat;
 }
-
 
 .about-text {
   background: #C490D1;
