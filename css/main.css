@@ -100,7 +100,8 @@ textarea {
 
 /*----------------- BASE STYLES -------------------*/
 html {
-    font-size: 16px; /* setting base font size for ems */
+    /*font-size: 16px; /* setting base font size for ems */
+    font-size: calc(0.7em + 1vw); /* setting base font size for ems and make them responsively growing with screen size */
 }
 
 body{
@@ -198,7 +199,7 @@ header {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 2000;
+  z-index: 2000; /* to have the header always on top of elements */
 }
 
 header .content-wrapper-header {
