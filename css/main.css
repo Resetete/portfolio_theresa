@@ -101,7 +101,7 @@ textarea {
 /*----------------- BASE STYLES -------------------*/
 html {
     /*font-size: 16px; /* setting base font size for ems */
-    font-size: calc(0.7em + 1vw); /* setting base font size for ems and make them responsively growing with screen size */
+    font-size: calc(0.7em + 0.6vw); /* setting base font size for ems and make them responsively growing with screen size */
 }
 
 body{
@@ -748,11 +748,31 @@ footer .content-wrapper figure {
   padding-bottom: 10px;
 }
 
-footer p {
-  font-size: 1em;
+footer .content-wrapper p {
+  font-size: 0.7em;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 100%;
+}
 
+footer .footer-container figure {
+  padding-left: 2px;
+  width: 5%;
+}
+
+#chamaeleon-footer-brand {
+  -webkit-filter: grayscale(100%) brightness(220%);
+  filter: grayscale(100%) brightness(220%);
+}
+
+footer p {
+  font-size: 0.5em;
+}
 
 /* ==========================================================================
    Helper classes
@@ -852,6 +872,10 @@ footer p {
         padding-top: 0;
       }
 
+      header nav {
+        justify-content: flex-end;
+      }
+
       header nav ul {
         flex-flow: row nowrap; /* nav bar items are placed next to each other  */
       }
@@ -889,16 +913,37 @@ footer p {
         background: url('../img/background-services-water-from-space.jpg') center center repeat fixed;
       }
 
+      .about-text figure {
+        width: 8%;
+      }
+
       #services-section {
         background: url('../img/background-contact.jpg') center top repeat fixed;
+      }
+
+      .services-item figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        width: 20%; /* setting size of icons */
       }
 
       #contact-section {
         background: url('../img/background-about-water-from-space.jpg') center center repeat fixed;
       }
 
+      .social-media-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 20%; /* makes the container div with social media icons smaller to keep icons closer together */
+      }
+
       .social-media-links ul li figure {
-        width: 60%; /* adjust size of social media icons */
+        width: 70%; /* adjust size of social media icons */
         padding: 0 ;
         margin: 0;
         display: flex;
@@ -910,8 +955,9 @@ footer p {
          background: url('../img/background_lastpic.jpg') center center repeat fixed;
       }
 
-      footer p {
-        font-size: 0.5em;
+      footer .footer-container figure {
+        width: 2%;
+        padding-left: 2px;
       }
 }
 
