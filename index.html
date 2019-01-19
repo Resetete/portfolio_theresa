@@ -49,7 +49,7 @@
           <section class="start-section">
             <div class="content-wrapper">
                 <div class="item-wrapper">
-                    <figure>
+                    <figure id="chamaeleon-fig">
                         <img id="chamaeleon" src="img/chamaeleon.png" alt="chamaleon-symbol">
                     </figure>
                 </div> <!-- end item wrapper -->
@@ -328,17 +328,33 @@
           <footer>
               <div class="content-wrapper">
                   <figure>
-                      <img id="chamaeleon-footer" src="img/chamaeleon.png" alt="chamaleon-symbol-footer">
+                      <a href="#start-section" > <img id="chamaeleon-footer" src="img/chamaeleon.png" alt="chamaleon-symbol-footer"> </a>
                   </figure>
                   <div class="footer-container">
                       <p> Copyright @ Theresa Mannschatz 2019 </p>
                       <figure>
                         <img id="chamaeleon-footer-brand" src="img/chamaeleon.png" alt="chamaleon-symbol-footer">
                       </figure>
-                  </div> <!-- end footer container --> 
+                  </div> <!-- end footer container -->
               </div> <!-- end footer content wrapper -->
           </footer>
     </main>
+
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <!-- other jQuery -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
 </body>
 
