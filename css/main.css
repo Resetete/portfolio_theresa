@@ -137,6 +137,8 @@ p {
   font-weight: 100;
   font-size: 1em; /* responive font size */
   font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -434,6 +436,7 @@ header nav ul li a {
   height: auto;
 }
 
+
 .overlay {
   /* thats the screen overlayed over the project icon */
   position: absolute; /* thats needed to put the overlay over the background image within the grid */
@@ -441,8 +444,8 @@ header nav ul li a {
   bottom: 0px;
   right: 0px;
   left: 0px;
-  height: 100%;
-  width: 100%;
+  /*height: 100%; */
+  width: 35vw;
   opacity: 0;
   transition: 0.5s ease; /* to fade in the screens */
   background-color: transparent;
@@ -458,8 +461,13 @@ header nav ul li a {
 .work-project-description {
   font-size: 1em; /* allows responsive text size */
   padding-left: 10px; /* get more space between caption and logo */
-  min-width: 45%;
+  width: 55%; /* to get the logos all aligned below of each other --> should be together with work icon = 90% width*/
 }
+
+.work-icon {
+  width: 30%; /* size of work project icon */
+}
+
 
 .text-strong-highlight { /* making text bold */
   font-weight: bold;
@@ -470,6 +478,23 @@ header nav ul li a {
   font-size: 0.8em;
 }
 
+.github-logo-projects  { /* github logo */
+  width: 10%;
+  display: flex;
+}
+
+.project-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  padding: 0;
+  margin: 0;
+}
+
+.github-logo-projects {
+  padding-left: 5px; /* space between project header and github logo */
+}
 /*-----------------------------------------------------*/
 /*------ mobile styles ABOUT section --------------*/
 /*-----------------------------------------------------*/
