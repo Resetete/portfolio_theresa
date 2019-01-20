@@ -445,11 +445,12 @@ header nav ul li a {
   right: 0px;
   left: 0px;
   /*height: 100%; */
-  width: 35vw;
+  width: 40vw;
   opacity: 0;
   transition: 0.5s ease; /* to fade in the screens */
   background-color: transparent;
   vertical-align: middle;
+  background: #2C81AF;
 }
 
 .grid-content-fields:hover .overlay {
