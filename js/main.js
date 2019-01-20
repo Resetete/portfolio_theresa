@@ -14,7 +14,7 @@ $("#chamaeleon").hover(function(){
 
     else if (count==1 | count<11)
       {
-        $("#chamaeleon").animate( { top: '+=460px' }, "slow", "swing" );
+        $("#chamaeleon").animate( { top: '+=400px' }, "slow", "swing" );
         count++;
         console.log("go down, " + "count: " + count);
       }
