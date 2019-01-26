@@ -914,7 +914,7 @@ footer p {
         padding: 0 0.3em 0 0.3em; /* spreads the nav bar items */
       }
 
-      /* setting work prject style */
+      /* setting work project style */
       .project-icon {
         display: flex; /* puts symbol and description next to each other */
         width: 100%;
@@ -926,6 +926,15 @@ footer p {
         font-size: 1em; /* allows responsive text size */
         padding-top: 30px; /* get more space between caption and logo */
       }
+
+      /* responsive grid to host the project icons and screens */
+      /* grid can have units like defines px or fr (fractions - to make the grid responsive) */
+      .container {
+        grid-gap: 30px; /* separate the grid items by 30px */
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) ); /* creates a grid with 4 columns and two rows & defines size of grid fields */
+        grid-template-rows: repeat(auto-fit, minmax(250px, 1fr) );
+      }
+
 
       .overlay {
         /* thats the screen overlayed over the project icon */
