@@ -120,6 +120,7 @@ h1 {
   font-family: 'Lato', sans-serif;
   margin: 0px;
   padding: 0px;
+  color: #DEFBFB;
 }
 
 h2 {
@@ -127,12 +128,12 @@ h2 {
   border: 0px;
   margin: 0px;
   font-size: 1.2em; /* responsize font size */
-  color: white;
+  color: #DEFBFB;
   font-family: 'Lato', sans-serif;
 }
 
 p {
-  color: white;
+  color: #DEFBFB;
   line-height: 1.5;
   font-weight: 100;
   font-size: 1em; /* responive font size */
@@ -177,7 +178,7 @@ figure {
 .section-header-text {
   mix-blend-mode: overlay; /* to blend the text into the background */
   font-size: 4em; /* scaling font (responsive) */
-  color: white;
+  color: #DEFBFB;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
@@ -260,7 +261,7 @@ header nav ul li a {
   letter-spacing: 1px;
   font-size: 0.7em;
   text-decoration: none;
-  color: white;
+  color: #DEFBFB;
   padding: 0 0.2em;
 }
 
@@ -293,7 +294,7 @@ header nav ul li a {
 }
 
 .slogan {
-  color: white;
+  color: #DEFBFB;
   font-size: 1.3em; /* responsive font size */
   font-family: 'Lato', sans-serif;
   font-weight: bold ;
@@ -701,11 +702,11 @@ header nav ul li a {
 #email {
   background: #2A7EAB;
   padding: 10px;
-  margin: 10px 0 0 0;
+  margin: 20px 0 20px 0;
 }
 
 #email a {
-  color: white;
+  color: #DEFBFB;
   text-decoration: none;
 }
 
@@ -780,6 +781,17 @@ footer .content-wrapper p {
   font-size: 0.7em;
 }
 
+
+.impressum {
+  padding-bottom: 10px;
+}
+
+.impressum a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .footer-container {
   display: flex;
   justify-content: center;
@@ -800,6 +812,19 @@ footer .footer-container figure {
 
 footer p {
   font-size: 0.5em;
+}
+
+
+/*-------------------------------------*/
+/*-------------- Impressum page -------*/
+/*-------------------------------------*/
+
+.impressum-section {
+  background-color: #189A83;
+  display: flex;
+  align-items: flex-start;
+  justify-content:  center;
+  height: 60vh;
 }
 
 /* ==========================================================================
@@ -1019,6 +1044,8 @@ footer p {
       footer {
          background: url('../img/background_lastpic.jpg') center center repeat fixed;
       }
+
+
 
       footer .footer-container figure {
         width: 2%;
