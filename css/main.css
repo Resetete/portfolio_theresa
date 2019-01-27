@@ -827,6 +827,25 @@ footer p {
   height: 60vh;
 }
 
+.impressum-section h2 {
+  margin-bottom: 20px;
+}
+
+.impressum-section .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+address {
+  color: #DEFBFB;
+  align-items: flex-start;
+  margin: 20px 0;
+  font-weight: 200;
+  line-height: 2;
+}
+
 
 
 /* ==========================================================================
