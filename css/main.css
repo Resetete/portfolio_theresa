@@ -788,7 +788,7 @@ footer .content-wrapper p {
 
 .impressum a {
   text-decoration: none;
-  color: inherit;
+  color: #DEFBFB;
 }
 
 
@@ -826,6 +826,8 @@ footer p {
   justify-content:  center;
   height: 60vh;
 }
+
+
 
 /* ==========================================================================
    Helper classes
