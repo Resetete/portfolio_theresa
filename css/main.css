@@ -520,10 +520,12 @@ header nav ul li a {
 
 .about-text figure {
   width: 20%;
+  padding-bottom: 20px;
 }
 
 #quote {
   font-size: 1.1em;
+  padding: 20px 0;
 }
 
 .increase-font-size {
@@ -912,6 +914,14 @@ footer p {
         justify-content: space-around;
         flex-flow: row nowrap;
         padding: 0 0.3em 0 0.3em; /* spreads the nav bar items */
+      }
+
+      .statement p {
+        width: 50%;
+      }
+
+      .about-text .content-wrapper {
+        width: 50%;
       }
 
       /* setting work project style */
