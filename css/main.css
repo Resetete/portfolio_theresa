@@ -116,28 +116,28 @@ footer {
 }
 
 h1 {
+  color: #DEFBFB;
   font-size: 1em; /* responsize font size */
   font-family: 'Lato', sans-serif;
   margin: 0px;
   padding: 0px;
-  color: #DEFBFB;
 }
 
 h2 {
-  padding: 0px;
   border: 0px;
-  margin: 0px;
-  font-size: 1.2em; /* responsize font size */
   color: #DEFBFB;
+  font-size: 1.2em; /* responsize font size */
   font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 p {
   color: #DEFBFB;
-  line-height: 1.5;
-  font-weight: 100;
-  font-size: 1em; /* responive font size */
   font-family: 'Lato', sans-serif;
+  font-size: 1em; /* responive font size */
+  font-weight: 100;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
@@ -153,35 +153,35 @@ figure {
 
 
 .content-wrapper {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
-  width: 90%;
   padding: 70px 0;
+  width: 90%;
 }
 
 .content-wrapper-section {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   width: 90%;
 }
 
 
 .section-header { /* centers the section separation namings */
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   height: 30vh; /* height of the section separations */
+  justify-content: center;
 }
 
 .section-header-text {
-  mix-blend-mode: overlay; /* to blend the text into the background */
-  font-size: 4em; /* scaling font (responsive) */
   color: #DEFBFB;
-  text-transform: uppercase;
   font-family: 'Lato', sans-serif;
+  font-size: 4em; /* scaling font (responsive) */
   font-weight: bold;
+  mix-blend-mode: overlay; /* to blend the text into the background */
+  text-transform: uppercase;
 }
 
 
@@ -190,78 +190,78 @@ figure {
 /*-----------------------------------------------------*/
 
 header {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
   background-color: #1B2E28;
   background: url('../img/background-foto-forest.jpg') center center no-repeat;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  left: 0;
   opacity: 0.9;
   position: sticky; /* to make header fixed (use for desktop and tablet only) */
-  top: 0;
-  left: 0;
   right: 0;
+  top: 0;
   width: 100%;
   z-index: 2000; /* to have the header always on top of elements */
 }
 
 header .content-wrapper-header {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   width: 90%;
 }
 
 .header-divider {
-  width: 100%;
+  border-top: 0.06em solid transparent;
   height: 1px;
   margin: 0.63em 0;
-  border-top: 0.06em solid transparent;
+  width: 100%;
 }
 
 /* logo header setting */
 header figure {
-  width: 10%; /* sets size of figure / logo */
-  display: flex;
   align-items: center;
-  justify-content: center; /* to center the logo for mobile first */
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center; /* to center the logo for mobile first */
   padding-top: 1.25em;
+  width: 10%; /* sets size of figure / logo */
 }
 
 header nav {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   width: 90%; /* nav bar width */
 }
 
 header nav ul {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
   flex-flow: row wrap; /* nav bar items are placed next to each other  */
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 header nav ul li {
-  display: flex;
   align-items: center ;
-  justify-content: space-around;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   padding: 0 0.3em 0.6em 0.3em; /* spreads the nav bar items */
 }
 
 header nav ul li a {
-  text-transform: uppercase;
+  color: #DEFBFB;
+  font-size: 0.7em;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 0.7em;
   text-decoration: none;
-  color: #DEFBFB;
+  text-transform: uppercase;
   padding: 0 0.2em;
 }
 
