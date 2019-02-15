@@ -1042,8 +1042,8 @@ address {
         background: url('../img/background-services-water-from-space.jpg') center center repeat fixed;
       }
 
-      .about-text figure {
-        width: 8%;
+      .about-text figure { /* portrait image */
+        width: 15%;
       }
 
       #services-section {
@@ -1126,6 +1126,10 @@ address {
 
       .about-text .content-wrapper {
         width: 50%;
+      }
+
+      .about-text .content-wrapper figure {
+        width: 20%;
       }
 
       /* setting work project style */
