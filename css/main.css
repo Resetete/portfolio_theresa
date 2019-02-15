@@ -184,6 +184,10 @@ figure {
   text-transform: uppercase;
 }
 
+#accent-color {
+  color: #99C24D;
+  font-weight: bold;
+}
 
 /*-----------------------------------------------------*/
 /* ------- HEADER ----------------------------- */
@@ -946,7 +950,7 @@ address {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /* -------- tablet and desktop styles here   ----------*/
+  /* -------- tablet styles here   ----------*/
       header .content-wrapper-header {
         flex-flow: row nowrap;
         padding: 20px 0;
@@ -988,10 +992,171 @@ address {
         height: auto;
       }
 
+      #work-icon  {
+        width: 30%;
+      }
+
       /* formatting caption */
       .work-project-description {
         font-size: 1em; /* allows responsive text size */
-        padding-top: 30px; /* get more space between caption and logo */
+      }
+
+      /* responsive grid to host the project icons and screens */
+      /* grid can have units like defines px or fr (fractions - to make the grid responsive) */
+      .container {
+        grid-gap: 30px; /* separate the grid items by 30px */
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) ); /* creates a grid with 4 columns and two rows & defines size of grid fields */
+        grid-template-rows: repeat(auto-fit, minmax(250px, 1fr) );
+      }
+
+
+      .overlay {
+        /* thats the screen overlayed over the project icon */
+        position: absolute; /* thats needed to put the overlay over the background image within the grid */
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        height: 50%;
+        width: 50%;
+        opacity: 0;
+        transition: 0.5s ease; /* to fade in the screens */
+        background-color: transparent;
+        vertical-align: middle;
+        background: #2C81AF;
+      }
+
+      .work-icon {
+        width: 100%; /* size of work project icon */
+      }
+
+      .start-section {
+        background: url('../img/background-foto-forest.jpg') center center repeat fixed;
+      }
+
+      #work-section {
+        background: url('../img/work-water-from-space-background.jpg') center center repeat fixed;
+      }
+
+      #about-section {
+        background: url('../img/background-services-water-from-space.jpg') center center repeat fixed;
+      }
+
+      .about-text figure {
+        width: 8%;
+      }
+
+      #services-section {
+        background: url('../img/background-contact.jpg') center top repeat fixed;
+      }
+
+      .services-item figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        width: 20%; /* setting size of icons */
+      }
+
+      #contact-section {
+        background: url('../img/background-about-water-from-space.jpg') center center repeat fixed;
+      }
+
+      .social-media-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 20%; /* makes the container div with social media icons smaller to keep icons closer together */
+      }
+
+      .social-media-links ul li figure {
+        width: 70%; /* adjust size of social media icons */
+        padding: 0 ;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+         background: url('../img/background_lastpic.jpg') center center repeat fixed;
+      }
+
+
+
+      footer .footer-container figure {
+        width: 2%;
+        padding-left: 2px;
+      }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* -------- DESKTOP styles here   ----------*/
+      header .content-wrapper-header {
+        flex-flow: row nowrap;
+        padding: 20px 0;
+      }
+
+      header figure {
+        width: 15%; /* sets size of figure / logo */
+        padding-top: 0;
+      }
+
+      header nav {
+        justify-content: flex-end;
+      }
+
+      header nav ul {
+        flex-flow: row nowrap; /* nav bar items are placed next to each other  */
+      }
+
+      header nav ul li {
+        display: flex;
+        align-items: center ;
+        justify-content: space-around;
+        flex-flow: row nowrap;
+        padding: 0 0.3em 0 0.3em; /* spreads the nav bar items */
+      }
+
+      .statement p {
+        width: 50%;
+      }
+
+      .about-text .content-wrapper {
+        width: 50%;
+      }
+
+      /* setting work project style */
+      .project-icon {
+        display: flex; /* puts symbol and description next to each other */
+        width: 100%;
+        height: auto;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .grid-content-fields {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      .project-item {
+        justify-content: center;
+        align-items: center;
+      }
+
+      #work-icon  {
+        width: 30%;
+      }
+
+      /* formatting caption */
+      .work-project-description {
+        font-size: 1em; /* allows responsive text size */
+        padding: 20px 0;
       }
 
       /* responsive grid to host the project icons and screens */
@@ -1020,7 +1185,7 @@ address {
       }
 
       .work-icon {
-        width: 50%; /* size of work project icon */
+        width: 100%; /* size of work project icon */
       }
 
       .start-section {
