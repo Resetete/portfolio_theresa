@@ -48,6 +48,30 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <!-- Modernizr to translate html5 to html for older browsers -->
         <script type=”text/javascript” src=”//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js“></script>
+
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <!-- START cookie law popup window -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+        <script>
+          window.addEventListener("load", function(){
+          window.cookieconsent.initialise({
+            "palette": {
+              "popup": {
+                "background": "#2d81af",
+                "text": "#defbfb"
+              },
+              "button": {
+                "background": "#c490d1",
+                "text": "#defbfb"
+              }
+            },
+            "theme": "edgeless",
+            "content": {
+              "message": "My website uses cookies to ensure the best user experience  on my website."
+            }
+          })});
+          </script>
+        <!-- END cookie law popup window -->
     </head>
 
 
