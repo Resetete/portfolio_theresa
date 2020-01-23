@@ -142,7 +142,6 @@ p {
   padding: 0;
 }
 
-
 img {
   width: 100%;
 }
@@ -150,7 +149,6 @@ img {
 figure {
   margin: 0;
 }
-
 
 .content-wrapper {
   align-items: center;
@@ -166,7 +164,6 @@ figure {
   justify-content: center;
   width: 90%;
 }
-
 
 .section-header { /* centers the section separation namings */
   align-items: center;
@@ -288,7 +285,7 @@ header nav ul li a {
     align-items: center;
     justify-content: center; /* left align items */
     flex-flow: row wrap;
-  }
+}
 
 .item-wrapper {
   display: flex;
@@ -331,7 +328,6 @@ header nav ul li a {
   background-color: transparent;  /* needed to have the transparent part of the png showing off  */
   border: 0;
 }
-
 
 /* chamaleon setting */
 .start-section figure {
@@ -441,7 +437,6 @@ header nav ul li a {
   height: auto;
 }
 
-
 .overlay {
   /* thats the screen overlayed over the project icon */
   position: absolute; /* thats needed to put the overlay over the background image within the grid */
@@ -462,7 +457,6 @@ header nav ul li a {
    opacity: 1; /* when hovering over the grid field the overlay image is shown */
 }
 
-
 /* formatting caption */
 .work-project-description {
   font-size: 1em; /* allows responsive text size */
@@ -473,7 +467,6 @@ header nav ul li a {
 .work-icon {
   width: 30%; /* size of work project icon */
 }
-
 
 .text-strong-highlight { /* making text bold */
   font-weight: bold;
@@ -501,6 +494,7 @@ header nav ul li a {
 .github-logo-projects {
   padding-left: 5px; /* space between project header and github logo */
 }
+
 /*-----------------------------------------------------*/
 /*------ mobile styles ABOUT section --------------*/
 /*-----------------------------------------------------*/
