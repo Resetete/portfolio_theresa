@@ -480,6 +480,7 @@ header nav ul li a {
 .github-logo-projects  { /* github logo */
   width: 10%;
   display: flex;
+  margin-top: 10px;
 }
 
 .project-header-wrapper {
