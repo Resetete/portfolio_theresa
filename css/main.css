@@ -533,7 +533,31 @@ header nav ul li a {
 }
 
 #skills {
-  padding: 0 30px;
+  width:  100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#skill-set-1 {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: flex-start;
+}
+
+#skill-set-2 {
+ display: flex;
+ flex-direction: column; 
+ align-items: flex-start;
+ justify-content: flex-start;
+ margin-left: 1em;
+}
+
+/* gauge value */
+meter::-webkit-meter-optimum-value {
+  background-color: rgba(219,27,149,0.7);
 }
 
 #tooltip {
