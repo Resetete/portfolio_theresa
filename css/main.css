@@ -408,6 +408,11 @@ header nav ul li a {
   width: 50%;
 }
 
+.favorite-project-icon {
+  margin-top: 10px;
+  width: 50%;
+}
+
 /* responsive grid to host the project icons and screens */
 /* grid can have units like defines px or fr (fractions - to make the grid responsive) */
 .container {
@@ -1170,6 +1175,10 @@ address {
       .project-item {
         justify-content: center;
         align-items: center;
+      }
+
+      .favorite-project-icon {
+        width: 60%;
       }
 
       #work-icon  {
