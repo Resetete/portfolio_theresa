@@ -408,6 +408,10 @@ header nav ul li a {
   width: 50%;
 }
 
+.behance-icon-projects {
+  margin-left: 5px;
+}
+
 .favorite-project-icon {
   margin-top: 10px;
   width: 50%;
